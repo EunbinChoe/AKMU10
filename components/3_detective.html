@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <title>AKMU 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="s3_d">
+    <div class="top">
+      <nav class="menu collapsible">
+        <svg class="icon menu__icon">
+          <use xlink:href="../images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="menu__list collapsible__content">
+          <li class="menu__item"><a href="../start.html">Restart</a></li>
+        </ul>
+      </nav>
+      <picture>
+        <source type="image/webp" srcset="../images/akmuEG3-2detective_.webp" />
+        <source type="image/png" srcset="../images/akmuEG3-2detective_.PNG" />
+        <img class="scene" src="../images/akmuEG3-2detective_.PNG" alt="" />
+      </picture>
+    </div>
+    <div class="bottom">
+      <svg class="icon frog">
+        <use xlink:href="../images/sprite.svg#CHANfrog1"></use>
+      </svg>
+      <svg class="icon bunny">
+        <use xlink:href="../images/sprite.svg#SUbunny1"></use>
+      </svg>
+      <div class="box" onclick="conversations()">
+        <div class="text">
+          <p id="detective__conv">
+            김탐정 : "아 자네 출근했는가.<br />
+            아주 좋은 소식이 있다네.<br />
+            자네가 그... 악뮤 팬이였지?"<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/input.js"></script>
+  </body>
+</html>

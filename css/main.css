@@ -1,0 +1,443 @@
+:root{
+    --box-size: 25vh;
+    --border-rad: 20px;
+    --color-base: #F2E3BC;
+    --color-chan: #38a700;
+    --color-su: #ff82a9;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  /* * = for all elements except pseudo elements*/
+  box-sizing: border-box; /*this means the area specified with width and height includes the padding and border*/
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+}
+
+.example{
+    height: calc(100vh - var(--box-size));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin: 10px;
+    padding: 2rem;
+    width: 20vh;
+    height: 20vh;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ch{
+    background: var(--color-chan);
+}
+
+.su{
+    background: var(--color-su);
+}
+
+.box:active{
+    background: white;
+}
+
+.something{
+    background: var(--color-base);
+    height: var(--box-size);
+    width: 100%;
+    border-top-left-radius: var(--border-rad);
+    border-top-right-radius: var(--border-rad);
+    overflow-y: scroll;
+}
+
+.conv{
+    margin: 0;
+    padding: 20px;
+    color: black;
+    font-size: 2.5rem;
+}
+
+/* @media screen and (min-width: 768px) {
+    body{
+        color: white;
+    }
+} */
+
+
+
+/* stage 1 before clean up */
+
+:root{
+    --box-size: 25vh;
+    --border-rad: 20px;
+    --color-base: #F2E3BC;
+    --color-dark: #414535;
+    --color-blue: #96BBBB;
+    --color-chan: #38a700;
+    --color-su: #ff82a9;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+body {
+    background: #fff4c0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 25vh;
+    word-break: keep-all;
+}
+
+#begin {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--color-blue);
+    z-index: 1;
+}
+
+.hello {
+    background: var(--color-blue);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.s1 {
+    background: #fff4c0;
+}
+
+.s2 {
+    background: #fedcca;
+}
+
+.s3 {
+    background: #e2ede1;
+}
+
+.s3_d {
+    background: #f7e6cd;
+}
+
+.s3_m {
+    background: #fdfbf8;
+}
+
+.top {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.menu__icon {
+    position: static;
+    margin: 1rem;
+    fill: var(--color-dark);
+}
+
+.menu__list {
+    background: var(--color-blue);
+    opacity: .5;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu__item {
+    padding: 1rem 3rem;
+    font-size: 3rem;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.collapsible--expanded .menu__icon {
+    fill: var(--color-blue);
+}
+
+.to-left {
+    rotate: 180deg;
+}
+
+.to-right {
+    right: 0;
+}
+
+.to-right, .to-left {
+    top: 50%;
+    fill: var(--color-dark);
+    transition: transform 0.3s;
+}
+
+.to-left:active, .to-right:active {
+    transform: scale(1.5);
+}
+
+.ahmola {
+    position: fixed;
+    height: 6rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+.ahmola1 {
+    top: 42%;
+    left: 21%;
+}
+
+.ahmola2 {
+    top: 32%;
+    left: 27%;
+}
+
+.mg {
+    fill: white;
+    filter: drop-shadow(0px 0px 4px grey);
+    opacity: 0.85;
+    left: 30%;
+}
+
+.mg--clicked {
+    display: none;
+}
+
+.mg--clicked + .input {
+    display: block;
+}
+
+.input {
+    display: none;
+    font-size: 3rem;
+}
+
+.input--correct .clue, .input--correct .btn{
+    display: none;
+}
+
+.clue {
+    border: 1px solid var(--color-dark);
+    outline: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 15rem;
+    color: var(--color-blue);
+    text-align: center;
+}
+
+.btn {
+    background: var(--color-blue);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 100%;
+}
+
+picture, .pic {
+    align-self: center;
+}
+
+.scene {
+    width: 100vw;
+}
+
+.click{
+    position: fixed;
+    left: 0;
+    align-self: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.click__detective {
+    clip-path: ellipse(24% 20% at 53% 49%);
+}
+
+.click__chest {
+    clip-path: ellipse(14% 7% at 16% 65%);
+}
+
+.click__map {
+    /* background: var(--color-su); */
+    clip-path: ellipse(16% 11% at 14% 36%);
+}
+
+.evidence {
+    width: 100%;
+    filter: drop-shadow(0px 0px 2px var(--color-dark));
+    transition: transform 0.3s;
+}
+
+.evidence:active {
+    transform: scale(1.05);
+}
+
+.bag__item, .bag__item * {
+    width: 100vw;
+    height: auto;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+.bottom {
+    display: flex;
+    padding: 0 10px 10px 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.frog, .bunny {
+    top: -10%;
+}
+
+.frog {
+    right: 85%;
+}
+
+.bunny {
+    left: 85%;
+}
+
+.box {
+    display: flex;
+    background: var(--color-base);
+    border: 5px dotted #b6a989;
+    overflow: hidden;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.next_page {
+    width: 100%;
+}
+
+.bag_container {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    overflow: scroll;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--color-dark);
+    line-height: 1.4;
+    width: 100%;
+}
+
+.clue__text, .clue__text * {
+    max-width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.clicked .clue__text, .clicked .selected__clue {
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.bag1 {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1),
+.item:nth-child(3),
+.item:nth-child(6),
+.item:nth-child(8) {
+    background: rgb(56, 167, 0, 0.5);
+}
+
+.item:nth-child(2),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(7) {
+    background: rgb(255, 130, 169, 0.5);
+}
+
+.collected__item, .collected__item * {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.selected__item, .selected__item *{
+    opacity: 1;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <title>AKMU 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="s3_m">
+    <div class="top">
+      <nav class="menu collapsible">
+        <svg class="icon menu__icon">
+          <use xlink:href="../images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="menu__list collapsible__content">
+          <li class="menu__item"><a href="../start.html">Restart</a></li>
+        </ul>
+      </nav>
+      <div class="ahmola ahmola2">
+        <svg class="icon mg">
+          <use xlink:href="../images/sprite.svg#magnifying-glass"></use>
+        </svg>
+        <div class="input">
+          <input
+            class="clue"
+            id="txt"
+            type="text"
+            maxlength="255"
+            placeholder="Where to?"
+          />
+          <button class="btn" type="button" onclick="myFunction2()">Go!</button>
+        </div>
+      </div>
+      <picture>
+        <source type="image/webp" srcset="../images/akmuEG3-1map_.webp" />
+        <source type="image/png" srcset="../images/akmuEG3-1map_.PNG" />
+        <img class="scene" src="../images/akmuEG3-1map_.PNG" alt="" />
+      </picture>
+    </div>
+    <div class="bottom">
+      <a href="st1_19.html">
+        <svg class="icon frog">
+          <use xlink:href="../images/sprite.svg#CHANfrog1"></use>
+        </svg>
+        <svg class="icon bunny">
+          <use xlink:href="../images/sprite.svg#SUbunny1"></use>
+        </svg>
+        <div class="box">
+          <div class="text">
+            <p>
+              지도...?<br />
+              어디로 가야하지?<br />
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/mg.js"></script>
+    <script src="../js/input.js"></script>
+  </body>
+</html>
