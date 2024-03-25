@@ -13,94 +13,84 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div id="begin" onclick="gameStarted()"></div>
     <div class="top">
       <nav class="menu collapsible">
         <svg class="icon menu__icon">
-          <use xlink:href="../images/sprite.svg#menu"></use>
+          <use xlink:href="/images/sprite.svg#menu"></use>
         </svg>
         <ul class="menu__list collapsible__content">
-          <li class="menu__item"><a href="../start.html">처음으로</a></li>
+          <li class="menu__item"><a href="/start.html">처음으로</a></li>
         </ul>
       </nav>
       <picture id="pg1_img">
-        <source type="image/webp" srcset="../images/akmuEG1.webp" />
-        <source type="image/png" srcset="../images/akmuEG1.PNG" />
-        <img class="full_pic" src="../images/akmuEG1.PNG" alt="" />
+        <source type="image/webp" srcset="/images/akmuEG1.webp" />
+        <source type="image/png" srcset="/images/akmuEG1.PNG" />
+        <img class="full_pic" src="/images/akmuEG1.PNG" alt="" />
       </picture>
       <picture id="pg2_img">
-        <source type="image/webp" srcset="../images/akmuEG2.webp" />
-        <source type="image/png" srcset="../images/akmuEG2.PNG" />
-        <img class="full_pic" src="../images/akmuEG2.PNG" alt="" />
+        <source type="image/webp" srcset="/images/akmuEG2.webp" />
+        <source type="image/png" srcset="/images/akmuEG2.PNG" />
+        <img class="full_pic" src="/images/akmuEG2.PNG" alt="" />
       </picture>
       <div class="pic" id="pg3_img2">
         <div class="move" onclick="nextRoom()">
           <svg class="icon to-left">
-            <use xlink:href="../images/sprite.svg#chevron"></use>
+            <use xlink:href="/images/sprite.svg#chevron"></use>
           </svg>
         </div>
         <picture>
-          <source type="image/webp" srcset="../images/akmuEG3-2.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-2.PNG" />
-          <img class="full_pic" src="../images/akmuEG3-2.PNG" alt="" />
+          <source type="image/webp" srcset="/images/akmuEG3-2.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-2.PNG" />
+          <img class="full_pic" src="/images/akmuEG3-2.PNG" alt="" />
         </picture>
         <picture class="click click__detective" id="cl_1">
-          <source
-            type="image/webp"
-            srcset="../images/akmuEG3-2detective.webp"
-          />
-          <source type="image/png" srcset="../images/akmuEG3-2detective.PNG" />
+          <source type="image/webp" srcset="/images/akmuEG3-2detective.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-2detective.PNG" />
           <img
             class="full_pic evidence"
-            src="../images/akmuEG3-2detective.PNG"
+            src="/images/akmuEG3-2detective.PNG"
             alt=""
           />
         </picture>
       </div>
       <div class="clicked__clue" id="pic_1">
         <picture>
-          <source
-            type="image/webp"
-            srcset="../images/akmuEG3-2detective_.webp"
-          />
-          <source type="image/png" srcset="../images/akmuEG3-2detective_.PNG" />
-          <img
-            class="full_pic"
-            src="../images/akmuEG3-2detective_.PNG"
-            alt=""
-          />
+          <source type="image/webp" srcset="/images/akmuEG3-2detective_.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-2detective_.PNG" />
+          <img class="full_pic" src="/images/akmuEG3-2detective_.PNG" alt="" />
         </picture>
       </div>
       <div class="pic" id="pg3_img">
         <div class="move" onclick="nextRoom()">
           <svg class="icon to-right">
-            <use xlink:href="../images/sprite.svg#chevron"></use>
+            <use xlink:href="/images/sprite.svg#chevron"></use>
           </svg>
         </div>
         <picture>
-          <source type="image/webp" srcset="../images/akmuEG3-1.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-1.PNG" />
-          <img class="full_pic" src="../images/akmuEG3-1.PNG" alt="" />
+          <source type="image/webp" srcset="/images/akmuEG3-1.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-1.PNG" />
+          <img class="full_pic" src="/images/akmuEG3-1.PNG" alt="" />
         </picture>
         <picture class="click click__chest" id="cl_2">
-          <source type="image/webp" srcset="../images/akmuEG3-1chest.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-1chest.PNG" />
+          <source type="image/webp" srcset="/images/akmuEG3-1chest.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-1chest.PNG" />
           <img
             class="full_pic evidence"
-            src="../images/akmuEG3-1chest.PNG"
+            src="/images/akmuEG3-1chest.PNG"
             alt=""
           />
         </picture>
         <picture class="click click__map" id="cl_3">
-          <source type="image/webp" srcset="../images/akmuEG3-1map.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-1map.PNG" />
+          <source type="image/webp" srcset="/images/akmuEG3-1map.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-1map.PNG" />
           <img
             class="full_pic evidence"
-            src="../images/akmuEG3-1map.PNG"
+            src="/images/akmuEG3-1map.PNG"
             alt=""
           />
         </picture>
@@ -108,7 +98,7 @@
       <div class="pic clicked__clue" id="pic_2">
         <div class="ahmola ahmola1">
           <svg class="icon mg">
-            <use xlink:href="../images/sprite.svg#magnifying-glass"></use>
+            <use xlink:href="/images/sprite.svg#magnifying-glass"></use>
           </svg>
           <div class="input" id="in1">
             <input
@@ -124,15 +114,15 @@
           </div>
         </div>
         <picture>
-          <source type="image/webp" srcset="../images/akmuEG3-1chest_.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-1chest_.PNG" />
-          <img class="full_pic" src="../images/akmuEG3-1chest_.png" alt="" />
+          <source type="image/webp" srcset="/images/akmuEG3-1chest_.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-1chest_.PNG" />
+          <img class="full_pic" src="/images/akmuEG3-1chest_.png" alt="" />
         </picture>
       </div>
       <div class="pic clicked__clue" id="pic_3">
         <div class="ahmola ahmola2">
           <svg class="icon mg">
-            <use xlink:href="../images/sprite.svg#magnifying-glass"></use>
+            <use xlink:href="/images/sprite.svg#magnifying-glass"></use>
           </svg>
           <div class="input" id="in2">
             <input
@@ -149,26 +139,26 @@
           </div>
         </div>
         <picture>
-          <source type="image/webp" srcset="../images/akmuEG3-1map_.webp" />
-          <source type="image/png" srcset="../images/akmuEG3-1map_.PNG" />
-          <img class="full_pic" src="../images/akmuEG3-1map_.png" alt="" />
+          <source type="image/webp" srcset="/images/akmuEG3-1map_.webp" />
+          <source type="image/png" srcset="/images/akmuEG3-1map_.PNG" />
+          <img class="full_pic" src="/images/akmuEG3-1map_.png" alt="" />
         </picture>
       </div>
       <div class="bag__item" id="bi1" onclick="clickItem()">
         <picture id="letter1">
-          <source type="image/webp" srcset="../images/letter-front.webp" />
-          <source type="image/png" srcset="../images/letter-front.PNG" />
-          <img class="full_pic" src="../images/letter-front.png" alt="" />
+          <source type="image/webp" srcset="/images/letter-front.webp" />
+          <source type="image/png" srcset="/images/letter-front.PNG" />
+          <img class="full_pic" src="/images/letter-front.png" alt="" />
         </picture>
         <picture id="letter2">
-          <source type="image/webp" srcset="../images/letter-back.webp" />
-          <source type="image/png" srcset="../images/letter-back.PNG" />
-          <img class="full_pic" src="../images/letter-back.png" alt="" />
+          <source type="image/webp" srcset="/images/letter-back.webp" />
+          <source type="image/png" srcset="/images/letter-back.PNG" />
+          <img class="full_pic" src="/images/letter-back.png" alt="" />
         </picture>
         <picture id="letter_close">
-          <source type="image/webp" srcset="../images/letter-closer.webp" />
-          <source type="image/png" srcset="../images/letter-closer.PNG" />
-          <img class="full_pic" src="../images/letter-closer.png" alt="" />
+          <source type="image/webp" srcset="/images/letter-closer.webp" />
+          <source type="image/png" srcset="/images/letter-closer.PNG" />
+          <img class="full_pic" src="/images/letter-closer.png" alt="" />
         </picture>
       </div>
       <div class="bag__item item_desc" id="bi2">
@@ -179,10 +169,10 @@
 
     <div class="bottom">
       <svg class="icon frog">
-        <use xlink:href="../images/sprite.svg#CHANfrog1"></use>
+        <use xlink:href="/images/sprite.svg#CHANfrog1"></use>
       </svg>
       <svg class="icon bunny">
-        <use xlink:href="../images/sprite.svg#SUbunny1"></use>
+        <use xlink:href="/images/sprite.svg#SUbunny1"></use>
       </svg>
       <div class="box" id="box" onclick="nextPage()">
         <div class="text" id="pg1_box">
@@ -201,16 +191,16 @@
           <ul class="bag1">
             <li class="item item1" onclick="openItem(1)">
               <picture class="collected__item" id="mggl_1">
-                <source type="image/webp" srcset="../images/letter.webp" />
-                <source type="image/png" srcset="../images/letter.PNG" />
-                <img src="../images/letter.png" alt="" />
+                <source type="image/webp" srcset="/images/letter.webp" />
+                <source type="image/png" srcset="/images/letter.PNG" />
+                <img src="/images/letter.png" alt="" />
               </picture>
             </li>
             <li class="item item2" onclick="openItem(2)">
               <picture class="collected__item" id="mggl_2">
-                <source type="image/webp" srcset="../images/mag_glass.webp" />
-                <source type="image/png" srcset="../images/mag_glass.PNG" />
-                <img src="../images/mag_glass.png" alt="" />
+                <source type="image/webp" srcset="/images/mag_glass.webp" />
+                <source type="image/png" srcset="/images/mag_glass.PNG" />
+                <img src="/images/mag_glass.png" alt="" />
               </picture>
             </li>
           </ul>
@@ -233,10 +223,10 @@
         </div>
       </div>
     </div>
-    <script src="../js/main.js"></script>
-    <script src="../js/page-changes.js"></script>
-    <script src="../js/clue.js"></script>
-    <script src="../js/input.js"></script>
-    <script src="../js/mg.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/page-changes.js"></script>
+    <script src="/js/clue.js"></script>
+    <script src="/js/input.js"></script>
+    <script src="/js/mg.js"></script>
   </body>
 </html>
