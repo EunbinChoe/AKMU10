@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div id="begin" onclick="gameStarted()"></div>
+    <div id="begin"></div>
     <div class="top">
       <nav class="menu collapsible">
         <svg class="icon menu__icon">
@@ -38,7 +38,7 @@
         <img class="full_pic" src="images/akmuEG2.png" alt="" />
       </picture>
       <div class="pic" id="pg3_img2">
-        <div class="move" onclick="nextRoom()">
+        <div class="move">
           <svg class="icon to-left">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
@@ -66,7 +66,7 @@
         </picture>
       </div>
       <div class="pic" id="pg3_img">
-        <div class="move" onclick="nextRoom()">
+        <div class="move">
           <svg class="icon to-right">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
@@ -220,9 +220,9 @@
       </div>
     </div>
     <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/page-changes.js"></script>
     <script type="module" src="js/clue.js"></script>
     <script type="module" src="js/input.js"></script>
     <script type="module" src="js/mg.js"></script>
+    <script type="module" src="js/page-changes.js"></script>
   </body>
 </html>

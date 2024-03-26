@@ -1,4 +1,4 @@
-function gameStarted() {
+document.getElementById("begin").addEventListener("click", function () {
     document.getElementById("begin").style.display = "none";
     document.getElementById("pg1_img").style.display = "block";
     document.getElementById("pg1_box").style.display = "flex";
@@ -17,7 +17,7 @@ function gameStarted() {
     document.getElementById("letter_close").style.display = "none";
     const bag_items = document.querySelectorAll(".bag__item");
     bag_items.forEach((item) => item.style.display = "none");
-}
+})
 
 function nextPage() {
     var pg = 0;
@@ -59,7 +59,9 @@ function nextPage() {
     document.getElementById(pgBox).style.display = "flex";
 }
 
-function nextRoom(){
+const nextRoom = document.querySelectorAll(".move");
+nextRoom.forEach((item) =>
+  item.addEventListener("click", function () {
     var room = 0;
     if(document.getElementById('pg3_img').style.display == "block"){
         room = 1;
@@ -68,7 +70,7 @@ function nextRoom(){
     }else{
         console.log("Error");
     }
-
+    
     document.getElementById("pg3_img").style.display = "none";
     document.getElementById("pg3_img2").style.display = "none";
     
@@ -79,7 +81,9 @@ function nextRoom(){
     }else {
         console.log("Error");
     }
-}
+  })
+);
+
 
 function openItem(i){
     if (i == 1 && document.getElementById("mggl_1").style.display == "block") {
