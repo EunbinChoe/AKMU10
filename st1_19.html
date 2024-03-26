@@ -104,9 +104,7 @@
               placeholder="------"
               autocomplete="off"
             />
-            <button class="btn" type="button" onclick="myFunction1()">
-              Open
-            </button>
+            <button class="btn" type="button" id="clue1">Open</button>
           </div>
         </div>
         <picture>
@@ -129,9 +127,7 @@
               placeholder="목적지를 입력하세요"
               autocomplete="off"
             />
-            <button class="btn" type="button" onclick="myFunction2()">
-              Go!
-            </button>
+            <button class="btn" type="button" id="clue2">Go!</button>
           </div>
         </div>
         <picture>
@@ -140,7 +136,7 @@
           <img class="full_pic" src="images/akmuEG3-1map_.png" alt="" />
         </picture>
       </div>
-      <div class="bag__item" id="bi1" onclick="clickItem()">
+      <div class="bag__item" id="bi_1">
         <picture id="letter1">
           <source type="image/webp" srcset="images/letter-front.webp" />
           <source type="image/png" srcset="images/letter-front.png" />
@@ -157,7 +153,7 @@
           <img class="full_pic" src="images/letter-closer.png" alt="" />
         </picture>
       </div>
-      <div class="bag__item item_desc" id="bi2">
+      <div class="bag__item item_desc" id="bi_2">
         탐정의 필수템, 돋보기다!<br />이걸로 확대해 볼 수 있는 작은 글씨가
         어디있지?
       </div>
@@ -170,7 +166,7 @@
       <svg class="icon bunny">
         <use xlink:href="images/sprite.svg#SUbunny1"></use>
       </svg>
-      <div class="box" id="box" onclick="nextPage()">
+      <div class="box" id="box">
         <div class="text" id="pg1_box">
           <p>
             내 이름은 이움카.<br />
@@ -185,14 +181,14 @@
         </div>
         <div id="pg3_box" class="bag_container">
           <ul class="bag1">
-            <li class="item item1" onclick="openItem(1)">
+            <li class="item" id="item_1">
               <picture class="collected__item" id="mggl_1">
                 <source type="image/webp" srcset="images/letter.webp" />
                 <source type="image/png" srcset="images/letter.png" />
                 <img src="images/letter.png" alt="" />
               </picture>
             </li>
-            <li class="item item2" onclick="openItem(2)">
+            <li class="item" id="item_2">
               <picture class="collected__item" id="mggl_2">
                 <source type="image/webp" srcset="images/mag_glass.webp" />
                 <source type="image/png" srcset="images/mag_glass.png" />
@@ -202,7 +198,7 @@
           </ul>
         </div>
         <div id="pg4_box" class="text clue__text">
-          <p id="sl_1" onclick="conversations(1)">
+          <p id="sl_1" class="conversation">
             김탐정 : "아 자네 출근했는가.<br />
             아주 좋은 소식이 있다네.<br />
             자네가 그... 악뮤 팬이었지?"<br />

@@ -10,16 +10,16 @@ document.getElementById("begin").addEventListener("click", function () {
     document.getElementById("pg4_box").style.display = "none";
     document.getElementById("mggl_1").style.display = "none";
     document.getElementById("mggl_2").style.display = "none";
-    document.getElementById("bi1").style.display = "none";
-    document.getElementById("bi2").style.display = "none";
+    document.getElementById("bi_1").style.display = "none";
+    document.getElementById("bi_2").style.display = "none";
     document.getElementById("letter1").style.display = "block";
     document.getElementById("letter2").style.display = "none";
     document.getElementById("letter_close").style.display = "none";
     const bag_items = document.querySelectorAll(".bag__item");
     bag_items.forEach((item) => item.style.display = "none");
-})
+});
 
-function nextPage() {
+document.getElementById("box").addEventListener("click", function () {
     var pg = 0;
     if(document.getElementById("pg1_img").style.display == "block") {
         pg = 1;
@@ -57,13 +57,13 @@ function nextPage() {
     document.getElementById("pg3_box").style.display = "none";
     document.getElementById("pg4_box").style.display = "none";
     document.getElementById(pgBox).style.display = "flex";
-}
+});
 
 const nextRoom = document.querySelectorAll(".move");
 nextRoom.forEach((item) =>
-  item.addEventListener("click", function () {
-    var room = 0;
-    if(document.getElementById('pg3_img').style.display == "block"){
+item.addEventListener("click", function () {
+      var room = 0;
+      if(document.getElementById('pg3_img').style.display == "block"){
         room = 1;
     }else if(document.getElementById('pg3_img2').style.display == "block"){
         room = 2;
@@ -82,34 +82,39 @@ nextRoom.forEach((item) =>
         console.log("Error");
     }
   })
-);
-
-
-function openItem(i){
+  );
+  
+  const openItem = document.querySelectorAll(".item");
+openItem.forEach((item) =>
+  item.addEventListener("click", function () {
+    let i = this.id.split("_").pop();
     if (i == 1 && document.getElementById("mggl_1").style.display == "block") {
-        if (document.getElementById("bi1").style.display == "block"){
-            document.getElementById("bi1").style.display = "none";
+        if (document.getElementById("bi_1").style.display == "block"){
+            document.getElementById("bi_1").style.display = "none";
         }else {
-            document.getElementById("bi1").style.display = "block";
+            document.getElementById("bi_1").style.display = "block";
         }
         document.getElementById("mggl_1").classList.toggle("selected__item");
     }else if (i == 2 && document.getElementById("mggl_2").style.display == "block") {
-        if (document.getElementById("bi2").style.display == "block"){
-            document.getElementById("bi2").style.display = "none";
+        if (document.getElementById("bi_2").style.display == "block"){
+            document.getElementById("bi_2").style.display = "none";
         }else {
-            document.getElementById("bi2").style.display = "block";
+            document.getElementById("bi_2").style.display = "block";
         }
         document.getElementById("mggl_2").classList.toggle("selected__item");
     }else {
         // console.log("Error");
         return;
     }
-}
+}));
 
-function clickItem(){
-    if (document.getElementById("bi2").style.display == "block") {
+
+const clickItems = document.querySelectorAll(".bag__item");
+clickItems.forEach((item) => item.addEventListener("click",
+function (){
+    if (document.getElementById("bi_2").style.display == "block") {
         if (document.getElementById("letter2").style.display == "block"){
-            document.getElementById("bi2").style.display = "none";
+            document.getElementById("bi_2").style.display = "none";
             document.getElementById("mggl_2").style.display = "none";
             document.getElementById("letter2").style.display = "none";
             document.getElementById("letter_close").style.display = "block";
@@ -125,4 +130,4 @@ function clickItem(){
         }
 
     }
-}
+}));

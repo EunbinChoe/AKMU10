@@ -1,8 +1,9 @@
 let i = 0;
 
-function conversations(j) {
+const conversations = document.querySelectorAll(".conversation");
+conversations.forEach((item) => item.addEventListener("click", function () {
     let text = "test";
-    var done = "cl_" + j;
+    let j = this.id.split("_").pop();
     if (j == 1){
         if (i == 0) {
             text = "나 : \"좋은 아ㅊ- 네?<br>좋은 소식이요?<br>악뮤요?\"";
@@ -12,7 +13,7 @@ function conversations(j) {
             text = "";
             const clickeds = document.querySelectorAll(".clicked");
             clickeds.forEach((item) => item.classList.remove("clicked"));
-            document.getElementById(done).style.display = "none";
+            document.getElementById("cl_1").style.display = "none";
             document.getElementById("sl_1").classList.remove("selected__clue");
             document.getElementById("pic_1").style.display = "none";
             document.getElementById("mggl_1").style.display = "block";
@@ -20,6 +21,7 @@ function conversations(j) {
             document.getElementById("pg4_box").style.display = "none";
             document.getElementById("pg3_box").style.display = "flex";
             document.body.style.backgroundColor = "#e2ede1";
+            i = 0;
 
         }
         document.getElementById("sl_1").innerHTML = text;
@@ -27,9 +29,9 @@ function conversations(j) {
     } else {
         return;
     }
-}
+}));
 
-function myFunction1() {
+document.getElementById("clue1").addEventListener("click", function() {
     let x1 = document.getElementById("numb").value;
     let text;
     if (x1 == 140407){
@@ -48,9 +50,9 @@ function myFunction1() {
         text = "wrong";
     }
     // document.getElementById("demo").innerHTML = text;
-}
+});
 
-function myFunction2() {
+document.getElementById("clue2").addEventListener("click", function () {
     let pre_x2 = document.getElementById("txt").value;
     let x2 = pre_x2.replace(/\s/g, "");
     document.getElementById("in2").classList.add("input--correct");
@@ -62,4 +64,4 @@ function myFunction2() {
         location.replace("st1_19.html");
     }
     // document.getElementById("demo").innerHTML = text;
-}
+});
