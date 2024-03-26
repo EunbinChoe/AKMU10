@@ -233,7 +233,7 @@
 69C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\encodeurl\LICENSE133558776551107189 0
 76C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\vm-browserify\test\vm.js133558776588610307 0
 99C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\static-eval\node_modules\escodegen\escodegen.js133558776623079988 0
-45C:\Users\dmsql\OneDrive\Desktop\AKMU10\images133558821892969421 1
+45C:\Users\dmsql\OneDrive\Desktop\AKMU10\images133558932246702551 1
 76C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\unset-value\node_modules133558776480624421 1
 61C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\type-fest133558894139679197 1
 109C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\core-js\modules\es6.object.get-own-property-descriptor.js133558776680206625 0
@@ -11379,6 +11379,7 @@
 95C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\parcel\node_modules\to-regex-range\index.js133558894188030204 0
 99C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\parcel\node_modules\to-regex-range\package.json133558894187881796 0
 89C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\babel-plugin-polyfill-regenerator\lib133558776599552936 1
+57C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\akmuEG2.png133554224776942542 0
 96C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\parcel\node_modules\to-regex-range\README.md133558894188558878 0
 97C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\parcel\node_modules\supports-color\browser.js133558894188654439 0
 90C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\@parcel\transformer-babel\lib\types.js133558894146612739 0
@@ -21324,7 +21325,6 @@
 90C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\caniuse-lite\data\features\svg-html.js133558776683647332 0
 120C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\@parcel\transformer-svg\node_modules\entities\lib\maps\entities.json133558894159275800 0
 85C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\caniuse-lite\data\features\svg.js133558776683789443 0
-57C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\akmuEG2.PNG133554224776942542 0
 85C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\caniuse-lite\data\features\sxg.js133558776683789443 0
 95C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\caniuse-lite\data\features\tabindex-attr.js133558776683873055 0
 120C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\@parcel\optimizer-htmlnano\node_modules\postcss-unique-selectors\src133558894177628172 1
@@ -30051,7 +30051,6 @@
 69C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\quote-stream133558776724885433 0
 73C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\quote-stream.cmd133558776724885433 0
 73C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\quote-stream.ps1133558776724885433 0
-59C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\polaroid2.PNG133556901934228490 0
 72C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\regjsparser.cmd133558776724885433 0
 63C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\rimraf133558776724885433 0
 67C:\Users\dmsql\OneDrive\Desktop\AKMU10\node_modules\.bin\rimraf.ps1133558776724885433 0
@@ -30088,6 +30087,7 @@
 63C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\letter-closer.png133557889812208716 0
 62C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\letter-front.png133556900438267299 0
 60C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\polaroid1.webp133556903675312735 0
+59C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\polaroid2.png133556901934228490 0
 60C:\Users\dmsql\OneDrive\Desktop\AKMU10\images\polaroid3.webp133556903854910907 0
 64C:\Users\dmsql\OneDrive\Desktop\AKMU10\dist\akmuEG1.1324a8d5.PNG133558918085389949 0
 65C:\Users\dmsql\OneDrive\Desktop\AKMU10\dist\akmuEG1.e6b1b1a3.webp133558927923727504 0
