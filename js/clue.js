@@ -22,7 +22,7 @@ if (!check.forEach((item) => item.classList.contains())) {
     var text_id = "sl_" + selected_num;
     var pic_id = "pic_" + selected_num;
     document.getElementById("pg3_box").style.display = "none";
-    document.getElementById("pg4_box").style.display = "flex";
+    document.getElementById("pg3-1_box").style.display = "flex";
     document.getElementById(text_id).classList.add("selected__clue");
     document.getElementById(pic_id).style.display = "block";
     })

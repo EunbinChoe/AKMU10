@@ -126,7 +126,15 @@ p {
     right: 0;
 }
 
-.to-right, .to-left {
+.to-down {
+    rotate: 90deg;
+}
+
+.to-down {
+    rotate: 270deg;
+}
+
+.to-right, .to-left, .to-down, .to-up {
     top: 50%;
     transition: transform 0.3s;
     opacity: 0.70;

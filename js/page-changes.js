@@ -7,7 +7,7 @@ document.getElementById("begin").addEventListener("click", function () {
     document.getElementById("pg3_img").style.display = "none";
     document.getElementById("pg3_box").style.display = "none";
     document.getElementById("pg3_img2").style.display = "none";
-    document.getElementById("pg4_box").style.display = "none";
+    document.getElementById("pg3-1_box").style.display = "none";
     document.getElementById("mggl_1").style.display = "none";
     document.getElementById("mggl_2").style.display = "none";
     document.getElementById("bi_1").style.display = "none";
@@ -55,36 +55,41 @@ document.getElementById("box").addEventListener("click", function () {
     document.getElementById("pg1_box").style.display = "none";
     document.getElementById("pg2_box").style.display = "none";
     document.getElementById("pg3_box").style.display = "none";
-    document.getElementById("pg4_box").style.display = "none";
+    document.getElementById("pg3-1_box").style.display = "none";
     document.getElementById(pgBox).style.display = "flex";
 });
 
 const nextRoom = document.querySelectorAll(".move");
 nextRoom.forEach((item) =>
 item.addEventListener("click", function () {
-      var room = 0;
-      if(document.getElementById('pg3_img').style.display == "block"){
+    var room = 0;
+    if(document.getElementById('pg3_img').style.display == "block"){
         room = 1;
     }else if(document.getElementById('pg3_img2').style.display == "block"){
         room = 2;
+    }else if(document.getElementById('pg4_img1').style.display == "block"){
+        room = 3;
     }else{
         console.log("Error");
     }
     
     document.getElementById("pg3_img").style.display = "none";
     document.getElementById("pg3_img2").style.display = "none";
+    document.getElementById("pg4_img1").style.display = "none";
     
     if(room == 1){
         document.getElementById("pg3_img2").style.display = "block";
     }else if(room == 2){
         document.getElementById("pg3_img").style.display = "block";
+    }else if(room == 3){
+        document.getElementById("pg4_img2").style.display = "block";
     }else {
         console.log("Error");
     }
   })
   );
   
-  const openItem = document.querySelectorAll(".item");
+const openItem = document.querySelectorAll(".item");
 openItem.forEach((item) =>
   item.addEventListener("click", function () {
     let i = this.id.split("_").pop();

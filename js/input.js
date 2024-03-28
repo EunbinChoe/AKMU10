@@ -18,7 +18,7 @@ conversations.forEach((item) => item.addEventListener("click", function () {
             document.getElementById("pic_1").style.display = "none";
             document.getElementById("mggl_1").style.display = "block";
             document.getElementById("pg3_img2").style.display = "block";
-            document.getElementById("pg4_box").style.display = "none";
+            document.getElementById("pg3-1_box").style.display = "none";
             document.getElementById("pg3_box").style.display = "flex";
             document.body.style.backgroundColor = "#e2ede1";
             i = 0;
@@ -58,10 +58,14 @@ document.getElementById("clue2").addEventListener("click", function () {
     document.getElementById("in2").classList.add("input--correct");
     let text;
     if (x2 == "악당구무리로47") {
-        location.replace("1_08.html");
+        location.replace("st21_83.html");
+        document.getElementById("pg4_img").style.display = "block";
+        document.getElementById("pg4_img1").style.display = "none";
+        document.getElementById("pg4_img2").style.display = "none";
+        document.getElementById("pg4_box").style.display = "none";
     } else {
         text = "wrong";
-        location.replace("st1_19.html");
+        // location.replace("st1_19.html");
     }
     // document.getElementById("demo").innerHTML = text;
 });
