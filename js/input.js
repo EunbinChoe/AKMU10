@@ -58,7 +58,7 @@ document.getElementById("clue2").addEventListener("click", function () {
     document.getElementById("in2").classList.add("input--correct");
     let text;
     if (x2 == "악당구무리로47") {
-        location.replace("st21_83.html");
+        location.replace("st2_83.html");
         document.getElementById("pg4_img").style.display = "block";
         document.getElementById("pg4_img1").style.display = "none";
         document.getElementById("pg4_img2").style.display = "none";
