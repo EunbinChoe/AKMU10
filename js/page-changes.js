@@ -75,14 +75,11 @@ item.addEventListener("click", function () {
     
     document.getElementById("pg3_img").style.display = "none";
     document.getElementById("pg3_img2").style.display = "none";
-    document.getElementById("pg4_img1").style.display = "none";
     
     if(room == 1){
         document.getElementById("pg3_img2").style.display = "block";
     }else if(room == 2){
         document.getElementById("pg3_img").style.display = "block";
-    }else if(room == 3){
-        document.getElementById("pg4_img2").style.display = "block";
     }else {
         console.log("Error");
     }
