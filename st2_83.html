@@ -15,8 +15,9 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/init_st2.js"></script>
   </head>
-  <body>
+  <body style="background: #d5ff92">
     <div class="top">
       <nav class="menu collapsible">
         <svg class="icon menu__icon">
@@ -33,7 +34,7 @@
       </picture>
       <div class="pic" id="pg4_img1">
         <div class="move">
-          <svg class="icon to-down">
+          <svg class="icon to-up">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </div>
@@ -76,28 +77,32 @@
       </div>
       <div class="pic" id="pg4_img2">
         <div class="move">
-          <svg class="icon to-up">
+          <svg class="icon to-down">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
         </div>
         <picture>
-          <source type="image/webp" srcset="images/akmuEG3-1.webp" />
-          <source type="image/png" srcset="images/akmuEG3-1.png" />
-          <img class="full_pic" src="images/akmuEG3-1.png" alt="" />
+          <source type="image/webp" srcset="images/akmuEG4-2.webp" />
+          <source type="image/png" srcset="images/akmuEG4-2.png" />
+          <img class="full_pic" src="images/akmuEG4-2.png" alt="" />
         </picture>
         <picture class="click click__photo1" id="cl_5">
-          <source type="image/webp" srcset="images/akmuEG3-1chest.webp" />
-          <source type="image/png" srcset="images/akmuEG3-1chest.png" />
+          <source type="image/webp" srcset="images/akmuEG4-2photo.webp" />
+          <source type="image/png" srcset="images/akmuEG4-2photo.png" />
           <img
             class="full_pic evidence"
-            src="images/akmuEG3-1chest.png"
+            src="images/akmuEG4-2photo.png"
             alt=""
           />
         </picture>
         <picture class="click click__note" id="cl_6">
-          <source type="image/webp" srcset="images/akmuEG3-1map.webp" />
-          <source type="image/png" srcset="images/akmuEG3-1map.png" />
-          <img class="full_pic evidence" src="images/akmuEG3-1map.png" alt="" />
+          <source type="image/webp" srcset="images/akmuEG4-2note.webp" />
+          <source type="image/png" srcset="images/akmuEG4-2note.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG4-2note.png"
+            alt=""
+          />
         </picture>
       </div>
       <div class="pic" id="pg5_img">
@@ -107,11 +112,11 @@
           </svg>
         </div>
         <picture>
-          <source type="image/webp" srcset="images/akmuEG4-1.webp" />
-          <source type="image/png" srcset="images/akmuEG4-1.png" />
-          <img class="full_pic" src="images/akmuEG4-1.png" alt="" />
+          <source type="image/webp" srcset="images/akmuEG5-1.webp" />
+          <source type="image/png" srcset="images/akmuEG5-1.png" />
+          <img class="full_pic" src="images/akmuEG5-1.png" alt="" />
         </picture>
-        <picture class="click click__book1" id="cl_8">
+        <picture class="click click__book1" id="cl_7">
           <source type="image/webp" srcset="images/akmuEG4-1door.webp" />
           <source type="image/png" srcset="images/akmuEG4-1door.png" />
           <img
@@ -120,7 +125,7 @@
             alt=""
           />
         </picture>
-        <picture class="click click__book2" id="cl_7">
+        <picture class="click click__book2" id="cl_8">
           <source type="image/webp" srcset="images/akmuEG4-1door.webp" />
           <source type="image/png" srcset="images/akmuEG4-1door.png" />
           <img
@@ -196,7 +201,7 @@
           />
         </picture>
       </div>
-      <picture id="pg5_img">
+      <!-- <picture id="pg5_img">
         <source type="image/webp" srcset="images/akmuEG3-1.webp" />
         <source type="image/png" srcset="images/akmuEG3-1.png" />
         <img class="full_pic" src="images/akmuEG3-1.png" alt="" />
@@ -217,11 +222,11 @@
           <source type="image/png" srcset="images/letter-closer.png" />
           <img class="full_pic" src="images/letter-closer.png" alt="" />
         </picture>
-      </div>
-      <div class="bag__item item_desc" id="bi_4">
+      </div> -->
+      <!-- <div class="bag__item item_desc" id="bi_4">
         탐정의 필수템, 돋보기다!<br />이걸로 확대해 볼 수 있는 작은 글씨가
         어디있지?
-      </div>
+      </div> -->
     </div>
 
     <div class="bottom">
@@ -232,19 +237,19 @@
         <use xlink:href="images/sprite.svg#SUbunny1"></use>
       </svg>
       <div class="box" id="box">
-        <div class="text" id="pg4_box">
+        <div class="text" id="pg3_box">
           <p>
             드디어 악무의 본거지에 도착했다!<br />
             어떻게 들어가지? 주변을 둘러봐야겠다. <br />
           </p>
         </div>
-        <div class="text" id="pg2_box">
+        <!-- <div class="text" id="pg2_box">
           <p>
             예비 탐정이자 탐정조수로 일하고 있는 나는 즐거운 덕질을 위해 오늘도
             출근을 한다.
           </p>
-        </div>
-        <div id="pg3_box" class="bag_container">
+        </div> -->
+        <div id="pg4_box" class="bag_container">
           <ul class="bag1">
             <li class="item" id="item_1">
               <picture class="collected__item" id="mggl_1">
@@ -262,7 +267,7 @@
             </li>
           </ul>
         </div>
-        <div id="pg3-1_box" class="text clue__text">
+        <!-- <div id="pg3-1_box" class="text clue__text">
           <p id="sl_1" class="conversation">
             김탐정 : "아 자네 출근했는가.<br />
             아주 좋은 소식이 있다네.<br />
@@ -277,13 +282,10 @@
             지도...?<br />
             어디로 가야하지?<br />
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/clue.js"></script>
-    <script type="module" src="js/input.js"></script>
-    <script type="module" src="js/mg.js"></script>
-    <script type="module" src="js/page-changes.js"></script>
+    <script type="module" src="js/func_st2.js"></script>
+    <script type="module" src="js/general.js"></script>
   </body>
 </html>

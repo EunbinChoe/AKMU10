@@ -17,7 +17,6 @@ html {
 }
 
 body {
-    background: #fff4c0;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -119,23 +118,28 @@ p {
 }
 
 .to-left {
+    top: 50%;
     rotate: 180deg;
 }
 
 .to-right {
+    top: 50%;
     right: 0;
 }
 
 .to-down {
+    top: 80%;
+    left: 45%;
     rotate: 90deg;
 }
 
-.to-down {
+.to-up {
+    top: 70%;
+    left: 10%;
     rotate: 270deg;
 }
 
 .to-right, .to-left, .to-down, .to-up {
-    top: 50%;
     transition: transform 0.3s;
     opacity: 0.70;
 }
@@ -215,9 +219,8 @@ picture, .pic {
 
 
 .click{
-    position: fixed;
+    position: absolute;
     left: 0;
-    align-self: center;
     overflow: hidden;
 }
 
@@ -230,8 +233,20 @@ picture, .pic {
 }
 
 .click__map {
-    /* background: var(--color-su); */
     clip-path: ellipse(16% 11% at 14% 36%);
+}
+
+.click__door {
+    clip-path: ellipse(8% 5% at 50% 70%);
+}
+
+.click__photo1 {
+    clip-path: ellipse(9% 5% at 25% 62%);
+}
+
+.click__note {
+    /* background: var(--color-su); */
+    clip-path: ellipse(7% 3% at 80% 21%);
 }
 
 .evidence {

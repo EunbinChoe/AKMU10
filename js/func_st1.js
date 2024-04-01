@@ -1,20 +1,16 @@
-// Collapsable
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
-  })
-);
-
-
 // next page
 document.getElementById("box").addEventListener("click", function () {
-    var pg = 0;
     if(document.getElementById("pg1_img").style.display == "block") {
-        pg = 1;
+        document.getElementById("pg1_img").style.display = "none";
+        document.getElementById("pg2_img").style.display = "block";
+        document.getElementById("pg1_box").style.display = "none";
+        document.getElementById("pg2_box").style.display = "flex";
         document.body.style.backgroundColor = "#fedcca";
     }else if(document.getElementById("pg2_img").style.display == "block") {
-        pg = 2;
+        document.getElementById("pg2_img").style.display = "none";
+        document.getElementById("pg3_img").style.display = "block";
+        document.getElementById("pg2_box").style.display = "none";
+        document.getElementById("pg3_box").style.display = "flex";
         document.body.style.backgroundColor = "#e2ede1";
     }else if(document.getElementById("pg3_img").style.display == "block" || document.getElementById("pg3_img2").style.display == "block") {
         return;
@@ -23,29 +19,16 @@ document.getElementById("box").addEventListener("click", function () {
         clicks.forEach((item) => item.classList.remove("clicked"));
         const select = document.querySelectorAll(".selected__clue");
         select.forEach((item) => item.classList.remove("selected__clue"));
-        pg = 2;
+        document.getElementById("pg2_img").style.display = "none";
+        document.getElementById("pg3_img").style.display = "block";
+        document.getElementById("pg2_box").style.display = "none";
+        document.getElementById("pg3_box").style.display = "flex";
         document.body.style.backgroundColor = "#e2ede1";
     }else if(document.getElementById("pic_1").style.display == "block"){
         return;
     }else {
         console.log("Error");
     }
-    
-    pg++;
-    
-    var pgImg = "pg" + pg + "_img";
-    var pgBox = "pg" + pg + "_box";
-    document.getElementById("pg1_img").style.display = "none";
-    document.getElementById("pg2_img").style.display = "none";
-    document.getElementById("pg3_img").style.display = "none";
-    document.getElementById("pic_2").style.display = "none";
-    document.getElementById("pic_3").style.display = "none";
-    document.getElementById(pgImg).style.display = "block";
-    document.getElementById("pg1_box").style.display = "none";
-    document.getElementById("pg2_box").style.display = "none";
-    document.getElementById("pg3_box").style.display = "none";
-    document.getElementById("pg3-1_box").style.display = "none";
-    document.getElementById(pgBox).style.display = "flex";
 });
 
 
@@ -53,27 +36,16 @@ document.getElementById("box").addEventListener("click", function () {
 const nextRoom = document.querySelectorAll(".move");
 nextRoom.forEach((item) =>
 item.addEventListener("click", function () {
-    var room = 0;
     if(document.getElementById('pg3_img').style.display == "block"){
-        room = 1;
+        document.getElementById("pg3_img").style.display = "none";
+        document.getElementById("pg3_img2").style.display = "block";
     }else if(document.getElementById('pg3_img2').style.display == "block"){
-        room = 2;
+        document.getElementById("pg3_img2").style.display = "none";
+        document.getElementById("pg3_img").style.display = "block";
     }else{
         console.log("Error");
     }
-    
-    document.getElementById("pg3_img").style.display = "none";
-    document.getElementById("pg3_img2").style.display = "none";
-    
-    if(room == 1){
-        document.getElementById("pg3_img2").style.display = "block";
-    }else if(room == 2){
-        document.getElementById("pg3_img").style.display = "block";
-    }else {
-        console.log("Error");
-    }
-  })
-  );
+}));
   
 
 // Opening Item
@@ -163,20 +135,8 @@ conversations.forEach((item) => item.addEventListener("click", function () {
 }));
 
 
-// Magnifying Glass
-const mgs = document.querySelectorAll(".mg");
-mgs.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.add("mg--clicked");
-  })
-);
-
-
 // Clue Clicking
 const check = document.querySelectorAll(".not__clickable");
-document.getElementById("pic_1").style.display = "none";
-document.getElementById("pic_2").style.display = "none";
-document.getElementById("pic_3").style.display = "none";
 
 if (!check.forEach((item) => item.classList.contains())) {
   const clicks = document.querySelectorAll(".click");
