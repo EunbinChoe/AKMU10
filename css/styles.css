@@ -34,7 +34,7 @@ p,
 
 /* WIDTH HEIGHT = 100% */
 #begin, .box, .bag_container, .text,
-.text, .bag1, item {
+.text, .bag, .item {
     width: 100%;
     height: 100%;
 }
@@ -172,6 +172,11 @@ p {
     left: 10%;
 }
 
+.ahmola3 {
+    top: 35%;
+    left: 10%;
+}
+
 .mg {
     fill: white;
     filter: drop-shadow(0px 0px 4px grey);
@@ -184,6 +189,7 @@ p {
 
 .mg--clicked + .input {
     display: block;
+    position: absolute;
 }
 
 .input {
@@ -245,8 +251,32 @@ picture, .pic {
 }
 
 .click__note {
-    /* background: var(--color-su); */
     clip-path: ellipse(7% 3% at 80% 21%);
+}
+
+.click__board {
+    clip-path: ellipse(32% 15% at 62% 24%);
+}
+
+.click__cab1 {
+    clip-path: ellipse(9% 4% at 45% 41%);
+}
+
+.click__cab2 {
+    clip-path: ellipse(9% 4% at 58% 79%);
+}
+
+.click__cab3 {
+    clip-path: ellipse(9% 4% at 72% 53%);
+}
+
+.click__cab4 {
+    clip-path: ellipse(9% 4% at 85% 74%);
+}
+
+.click__cab5 {
+    /* background: var(--color-su); */
+    clip-path: ellipse(9% 4% at 98% 58%);
 }
 
 .evidence {
@@ -323,12 +353,20 @@ picture, .pic {
     overflow: scroll;
 }
 
-.bag1 {
+.bag {
     display: grid;
     margin: 0;
     padding: 1rem;
     grid-gap: 1rem;
+}
+
+.bag1 {
     grid-template-columns: repeat(2, 1fr);
+}
+
+.bag2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .item {
@@ -341,17 +379,11 @@ picture, .pic {
     align-items: center;
 }
 
-.item:nth-child(1),
-.item:nth-child(3),
-.item:nth-child(6),
-.item:nth-child(8) {
+.item:nth-child(odd){
     background: rgb(56, 167, 0, 0.5);
 }
 
-.item:nth-child(2),
-.item:nth-child(4),
-.item:nth-child(5),
-.item:nth-child(7) {
+.item:nth-child(even) {
     background: rgb(255, 130, 169, 0.5);
 }
 

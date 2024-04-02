@@ -54,7 +54,7 @@
         </picture>
       </div>
       <div class="pic clicked__clue" id="pic_4">
-        <div class="ahmola ahmola1">
+        <div class="ahmola ahmola3">
           <svg class="icon mg">
             <use xlink:href="images/sprite.svg#magnifying-glass"></use>
           </svg>
@@ -68,6 +68,11 @@
             />
             <button class="btn" type="button" id="clue3">Open</button>
           </div>
+          <picture>
+            <source type="image/webp" srcset="images/doorlock.webp" />
+            <source type="image/png" srcset="images/doorlock.png" />
+            <img class="full_pic" src="images/doorlock.png" alt="" />
+          </picture>
         </div>
         <picture>
           <source type="image/webp" srcset="images/akmuEG4-1door_.webp" />
@@ -105,6 +110,20 @@
           />
         </picture>
       </div>
+      <div class="bag__item" id="bi_1">
+        <picture>
+          <source type="image/webp" srcset="images/polaroid1.webp" />
+          <source type="image/png" srcset="images/polaroid1.png" />
+          <img class="full_pic" src="images/polaroid1.png" alt="" />
+        </picture>
+      </div>
+      <div class="bag__item" id="bi_2">
+        <picture>
+          <source type="image/webp" srcset="images/note.webp" />
+          <source type="image/png" srcset="images/note.png" />
+          <img class="full_pic" src="images/note.png" alt="" />
+        </picture>
+      </div>
       <div class="pic" id="pg5_img">
         <div class="move">
           <svg class="icon to-right">
@@ -116,7 +135,7 @@
           <source type="image/png" srcset="images/akmuEG5-1.png" />
           <img class="full_pic" src="images/akmuEG5-1.png" alt="" />
         </picture>
-        <picture class="click click__book1" id="cl_7">
+        <!-- <picture class="click click__book1" id="cl_7">
           <source type="image/webp" srcset="images/akmuEG4-1door.webp" />
           <source type="image/png" srcset="images/akmuEG4-1door.png" />
           <img
@@ -133,7 +152,7 @@
             src="images/akmuEG4-1door.png"
             alt=""
           />
-        </picture>
+        </picture> -->
       </div>
       <div class="pic" id="pg5_img2">
         <div class="move">
@@ -250,39 +269,74 @@
           </p>
         </div> -->
         <div id="pg4_box" class="bag_container">
-          <ul class="bag1">
+          <ul class="bag bag2">
             <li class="item" id="item_1">
               <picture class="collected__item" id="mggl_1">
-                <source type="image/webp" srcset="images/letter.webp" />
-                <source type="image/png" srcset="images/letter.png" />
-                <img src="images/letter.png" alt="" />
+                <source type="image/webp" srcset="images/polaroid1.webp" />
+                <source type="image/png" srcset="images/polaroid1.png" />
+                <img src="images/polaroid1.png" alt="" />
               </picture>
             </li>
             <li class="item" id="item_2">
               <picture class="collected__item" id="mggl_2">
-                <source type="image/webp" srcset="images/mag_glass.webp" />
-                <source type="image/png" srcset="images/mag_glass.png" />
-                <img src="images/mag_glass.png" alt="" />
+                <source type="image/webp" srcset="images/note.webp" />
+                <source type="image/png" srcset="images/note.png" />
+                <img src="images/note.png" alt="" />
+              </picture>
+              <picture class="collected__item" id="mggl_3">
+                <source type="image/webp" srcset="images/stickynote.webp" />
+                <source type="image/png" srcset="images/stickynote.png" />
+                <img src="images/stickynote.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_3">
+              <picture class="collected__item" id="mggl_4">
+                <source
+                  type="image/webp"
+                  srcset="images/interview_cover.webp"
+                />
+                <source type="image/png" srcset="images/interview_cover.png" />
+                <img src="images/interview_cover.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_4">
+              <picture class="collected__item" id="mggl_5">
+                <source type="image/webp" srcset="images/polaroid2.webp" />
+                <source type="image/png" srcset="images/polaroid2.png" />
+                <img src="images/polaroid2.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_5">
+              <picture class="collected__item" id="mggl_6">
+                <source type="image/webp" srcset="images/lockerkey.webp" />
+                <source type="image/png" srcset="images/lockerkey.png" />
+                <img src="images/lockerkey.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_6">
+              <picture class="collected__item" id="mggl_7">
+                <source type="image/webp" srcset="images/cardkey.webp" />
+                <source type="image/png" srcset="images/cardkey.png" />
+                <img src="images/cardkey.png" alt="" />
               </picture>
             </li>
           </ul>
         </div>
-        <!-- <div id="pg3-1_box" class="text clue__text">
-          <p id="sl_1" class="conversation">
-            김탐정 : "아 자네 출근했는가.<br />
-            아주 좋은 소식이 있다네.<br />
-            자네가 그... 악뮤 팬이었지?"<br />
+        <div id="pg4-1_box" class="text clue__text">
+          <p id="sl_4" class="conversation">
+            현관이 잠겨있군...<br />
+            비밀번호가 뭘까?<br />
           </p>
-          <p id="sl_2">
+          <p id="sl_5">
             오늘을 위해 고이 모셔둔 내 탐정 도구가 들어있는 보물상자다.<br />
             6자리 숫자의 비밀번호라...<br />
             내가 뭘로 설정했더라?
           </p>
-          <p id="sl_3">
+          <p id="sl_5">
             지도...?<br />
             어디로 가야하지?<br />
           </p>
-        </div> -->
+        </div>
       </div>
     </div>
     <script type="module" src="js/func_st2.js"></script>

@@ -39,7 +39,103 @@ item.addEventListener("click", function () {
         document.getElementById("pg4_img2").style.display = "none";
         document.getElementById("pg4_img1").style.display = "block";
         document.body.style.backgroundColor = "#d5ff92";
+    }else if(document.getElementById('pg5_img').style.display == "block"){
+        document.getElementById("pg5_img").style.display = "none";
+        document.getElementById("pg5_img2").style.display = "block";
+        document.body.style.backgroundColor = "#e6d8cb";
+    }else if(document.getElementById('pg5_img2').style.display == "block"){
+        document.getElementById("pg5_img2").style.display = "none";
+        document.getElementById("pg5_img").style.display = "block";
+        document.body.style.backgroundColor = "#e6d8cb";
     }else{
         console.log("Error");
+    }
+}));
+
+
+// Clue Clicking
+const check = document.querySelectorAll(".not__clickable");
+
+if (!check.forEach((item) => item.classList.contains())) {
+  const clicks = document.querySelectorAll(".click");
+  clicks.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.parentElement.classList.add("clicked");
+    document.getElementById("box").classList.add("clicked");
+    var selected_num = this.id.split("_").pop();
+    document.getElementById("pg4_img1").style.display = "none";
+    document.getElementById("pg4_img2").style.display = "none";
+    if (selected_num == 4) {
+        document.body.style.backgroundColor = "#d5ff92";
+    } else if (selected_num == 5) {
+        document.getElementById("pg4_img2").style.display = "block";
+        document.getElementById("cl_5").style.display = "none";
+        document.getElementById("mggl_1").style.display = "block";
+        return;
+    } else if (selected_num == 6) {
+        document.getElementById("pg4_img2").style.display = "block";
+        document.getElementById("cl_6").style.display = "none";
+        document.getElementById("mggl_2").style.display = "block";
+        return;
+    } else {
+        document.body.style.backgroundColor = "#fdfbf8";
+    }
+    var text_id = "sl_" + selected_num;
+    var pic_id = "pic_" + selected_num;
+    document.getElementById("pg4_box").style.display = "none";
+    document.getElementById("pg4-1_box").style.display = "flex";
+    document.getElementById(text_id).classList.add("selected__clue");
+    document.getElementById(pic_id).style.display = "block";
+})
+  );
+}
+
+
+// Clue 3 answer
+document.getElementById("clue3").addEventListener("click", function() {
+    let x1 = document.getElementById("numb").value;
+    let text;
+    if (x1 == 5683){
+        document.getElementById("in3").classList.add("input--correct");
+        const clickeds = document.querySelectorAll(".clicked");
+        clickeds.forEach((item) => item.classList.remove("clicked"));
+        document.getElementById("cl_4").style.display = "none";
+        document.getElementById("pic_4").style.display = "none";
+        document.getElementById("pg5_img").style.display = "block";
+        document.getElementById("pg4_box").style.display = "block";
+        document.getElementById("mggl_2").style.display = "none";
+        document.getElementById("sl_4").classList.remove("selected__clue");
+        document.body.style.backgroundColor = "#e6d8cb";
+    }else if (isNaN(x1)) {
+        text = "Input not valid";
+    } else {
+        text = "wrong";
+    }
+    // document.getElementById("demo").innerHTML = text;
+});
+
+
+// Opening Item
+const openItem = document.querySelectorAll(".item");
+openItem.forEach((item) =>
+  item.addEventListener("click", function () {
+    let i = this.id.split("_").pop();
+    if (i == 1 && document.getElementById("mggl_1").style.display == "block") {
+        if (document.getElementById("bi_1").style.display == "block"){
+            document.getElementById("bi_1").style.display = "none";
+        }else {
+            document.getElementById("bi_1").style.display = "block";
+        }
+        document.getElementById("mggl_1").classList.toggle("selected__item");
+    }else if (i == 2 && document.getElementById("mggl_2").style.display == "block") {
+        if (document.getElementById("bi_2").style.display == "block"){
+            document.getElementById("bi_2").style.display = "none";
+        }else {
+            document.getElementById("bi_2").style.display = "block";
+        }
+        document.getElementById("mggl_2").classList.toggle("selected__item");
+    }else {
+        // console.log("Error");
+        return;
     }
 }));

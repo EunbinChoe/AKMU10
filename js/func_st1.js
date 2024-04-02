@@ -196,13 +196,8 @@ document.getElementById("clue2").addEventListener("click", function () {
     let text;
     if (x2 == "악당구무리로47") {
         location.replace("st2_83.html");
-        document.getElementById("pg4_img").style.display = "block";
-        document.getElementById("pg4_img1").style.display = "none";
-        document.getElementById("pg4_img2").style.display = "none";
-        document.getElementById("pg4_box").style.display = "none";
     } else {
         text = "wrong";
-        // location.replace("st1_19.html");
     }
     // document.getElementById("demo").innerHTML = text;
 });
