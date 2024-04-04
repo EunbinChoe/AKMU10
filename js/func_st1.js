@@ -19,9 +19,9 @@ document.getElementById("box").addEventListener("click", function () {
         clicks.forEach((item) => item.classList.remove("clicked"));
         const select = document.querySelectorAll(".selected__clue");
         select.forEach((item) => item.classList.remove("selected__clue"));
-        document.getElementById("pg2_img").style.display = "none";
+        document.getElementById("pic_2").style.display = "none";
+        document.getElementById("pic_3").style.display = "none";
         document.getElementById("pg3_img").style.display = "block";
-        document.getElementById("pg2_box").style.display = "none";
         document.getElementById("pg3_box").style.display = "flex";
         document.body.style.backgroundColor = "#e2ede1";
     }else if(document.getElementById("pic_1").style.display == "block"){
