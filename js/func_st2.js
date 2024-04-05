@@ -1,3 +1,4 @@
+
 // next page
 document.getElementById("box").addEventListener("click", function () {
     if(document.getElementById("pg4_img").style.display == "block") {
@@ -7,11 +8,7 @@ document.getElementById("box").addEventListener("click", function () {
         document.getElementById("pg4_box").style.display = "flex";
         document.body.style.backgroundColor = "#d5ff92";
     }else if(document.getElementById("pg4_img1").style.display == "block") { // || document.getElementById("pg4_img2").style.display == "block"
-        // document.getElementById("pg4_img1").style.display = "none";
-        // document.getElementById("pg4_img2").style.display = "none";
-        // document.getElementById("pg5_img2").style.display = "block";
-        // }else if(document.getElementById("pg3_img").style.display == "block" || document.getElementById("pg3_img2").style.display == "block") {
-                return;
+        return;
     }else if(document.getElementById("pic_4").style.display == "block"){ // || document.getElementById("pic_3").style.display == "block"
         const clicks = document.querySelectorAll(".clicked");
         clicks.forEach((item) => item.classList.remove("clicked"));
@@ -93,6 +90,22 @@ if (!check.forEach((item) => item.classList.contains())) {
                 document.getElementById("pg4-1_box").style.display = "none";
                 document.getElementById("pic_9").style.display = "block";
                 return;
+            } else if (selected_num == 13 && document.getElementById("mggl_6").style.display == "block") {
+                for (let k = 10; k < 15; k++){
+                    let c = "cl_" + k;
+                    document.getElementById(c).style.display = "none";
+                }
+                document.getElementById("mggl_4").style.display = "block";
+                document.getElementById("mggl_5").style.display = "block";
+                document.getElementById("mggl_7").style.display = "block";
+                document.getElementById("pg5_img2").style.display = "block";
+                return;
+            } else if (selected_num >= 10 && selected_num <= 14) {
+                document.getElementById("locked").style.display = "block";
+                setTimeout(function(){document.getElementById("locked").style.display = "none";}, 2000);
+                
+                document.getElementById("pg5_img2").style.display = "block";
+                return;
             } else if (selected_num == 15) {
                 document.getElementById("cl_15").style.display = "none";
                 document.getElementById("mggl_3").style.display = "block";
@@ -131,6 +144,7 @@ document.getElementById("clue3").addEventListener("click", function() {
         document.getElementById("pic_4").style.display = "none";
         document.getElementById("pg5_img").style.display = "block";
         document.getElementById("pg4_box").style.display = "block";
+        document.getElementById("pg4-1_box").style.display = "none";
         document.getElementById("mggl_2").style.display = "none";
         document.getElementById("note").style.display = "none";
         document.getElementById("stickynote").style.display = "block";
@@ -143,6 +157,92 @@ document.getElementById("clue3").addEventListener("click", function() {
     }
     // document.getElementById("demo").innerHTML = text;
 });
+
+
+// Books in shelves
+const list = document.querySelector(".list");
+
+let draggedTarget;
+let helper;
+document.addEventListener("dragstart", function(e) {
+  draggedTarget = e.target;
+
+  helper = document.createElement("div");
+  helper.innerText = draggedTarget.querySelector(".list-item-name").innerText;
+  helper.style.position = "absolute";
+  helper.style.top = "-9999px";
+  helper.style.padding = "1rem";
+  helper.style.backgroundColor = "#000";
+  helper.style.color = "#ddd";
+  helper.style.fontSize = "1.5rem";
+  helper.style.fontFamily = "Consolas";
+  document.querySelector(".top").appendChild(helper);
+  
+  e.dataTransfer.setDragImage(helper, 0, 0);
+});
+
+document.addEventListener("dragenter", function(e) {
+    console.log("eh");
+    console.log(draggedTarget);
+    console.log(e.target);
+    
+    if (e.target !== draggedTarget && e.target.classList[0] === "list-item") {
+        const ep = e.target.previousElementSibling;
+        const en = e.target.nextElementSibling;
+        const dp = draggedTarget.previousElementSibling;
+        const dn = draggedTarget.nextElementSibling;
+        console.log("begin");
+        console.log(ep);
+        console.log(en);
+        console.log(dp);
+        console.log(dn);
+        console.log("end");
+
+        if (!ep && !dn) {
+            list.removeChild(draggedTarget);
+            e.target.insertAdjacentElement("beforebegin", draggedTarget);
+            console.log("1");
+        } else if (!en && !dp) {
+            list.removeChild(draggedTarget);
+            e.target.insertAdjacentElement("afterend", draggedTarget);
+            console.log("2");
+        } else if (ep && ep != draggedTarget) {
+            list.removeChild(e.target);
+            list.removeChild(draggedTarget);
+            ep.insertAdjacentElement("afterend", draggedTarget);
+            draggedTarget.insertAdjacentElement("beforebegin", e.target);
+            console.log("3");
+        } else if (!ep) {
+            list.removeChild(e.target);
+            list.removeChild(draggedTarget);
+            dn.insertAdjacentElement("beforebegin", e.target);
+            e.target.insertAdjacentElement("beforebegin", draggedTarget);
+            console.log("4");
+        } else if (en && en != draggedTarget) {
+            list.removeChild(e.target);
+            list.removeChild(draggedTarget);
+            en.insertAdjacentElement("beforebegin", draggedTarget);
+            draggedTarget.insertAdjacentElement("beforebegin", e.target);
+            console.log("5");
+        } else if (!en) {
+            list.removeChild(e.target);
+            dp.insertAdjacentElement("afterend", e.target);
+            console.log("6");
+        } else {
+            
+            console.log("error");
+        }
+  } 
+});
+
+document.addEventListener("dragover", function(e) {
+  e.preventDefault(); // why necessary ?
+});
+
+document.addEventListener("drop", function(e) {
+  e.preventDefault();
+  helper.parentNode.removeChild(helper);
+}); 
 
 
 // Opening Item

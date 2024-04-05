@@ -259,6 +259,7 @@ picture, .pic {
 }
 
 .click__cab1 {
+    /* background: var(--color-su); */
     clip-path: ellipse(9% 4% at 45% 41%);
 }
 
@@ -275,27 +276,74 @@ picture, .pic {
 }
 
 .click__cab5 {
-    /* background: var(--color-su); */
     clip-path: ellipse(9% 4% at 98% 58%);
 }
 
 .click__stickynote{
-    clip-path: polygon(50% 42%, 55% 0, 100% 0, 100% 100%, 0 100%, 0 49%);
-    scale: 0.18;
-    top: 24%;
-    left: 25%;
+    clip-path: polygon(82% 50%, 67% 51%, 68% 57%, 81% 57%);
     opacity: 0.5;
 }
 
 .click__lyrics{
-    scale: 0.13;
-    top: -4%;
-    left: -23%;
+    clip-path: polygon(18% 35%, 36% 35%, 36% 48%, 18% 48%);
     opacity: 0.5;
 }
 
-.click__stickynote > img {
-    rotate: 5deg;
+.list-container {
+    background: #f9e2c3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.list-item {
+    display: flex;
+    float: left;
+    padding: 1rem;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+
+.list-item-name {
+    font-family: "Consolas";
+    user-select: none;
+}
+
+.book_1 {
+    background: #ffaaac;
+}
+.book_2 {
+    background: #ffd5ad;
+}
+.book_3 {
+    background: #ffffff;
+}
+.book_4 {
+    background: #c1d2e0;
+}
+.book_5 {
+    background: #c9e9c3;
+}
+.book_6 {
+    background: #ff979a;
+}
+.book_7 {
+    background: #fff1bf;
+}
+.book_8 {
+    background: #ceecc8;
+}
+.book_9 {
+    background: #d1ebff;
 }
 
 .evidence {
@@ -327,6 +375,7 @@ picture, .pic {
     border-radius: 2rem;
     text-align: center;
     line-height: 1.4;
+    width: 100vw;
 }
 
 
