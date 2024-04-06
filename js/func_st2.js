@@ -205,37 +205,42 @@ if (!check.forEach((item) => item.classList.contains())) {
     
     
     // Books in shelves
-    const list = document.querySelector(".list");
-    function orderChangeBooks () {
-        var newList;
-        new Sortable (list, {
-            animation: 150,
-            onEnd: function (/**Event*/evt) {
-                newList = evt.to;
-                if(newList.children[0].classList[1] == "book_1" && 
-                newList.children[1].classList[1]  == "book_2" && 
-                newList.children[2].classList[1]  == "book_3" && 
-                newList.children[3].classList[1]  == "book_4" && 
-                newList.children[4].classList[1]  == "book_5" && 
-                newList.children[5].classList[1]  == "book_6" && 
-                newList.children[6].classList[1]  == "book_7" && 
-                newList.children[7].classList[1]  == "book_8" && 
-                newList.children[8].classList[1]  == "book_9"){
-                    console.log("yay please");
-                    this.destroy();
-                    document.getElementById("cl_7").style.display = "none";
-                    document.getElementById("pic_7").style.display = "none";
-                    document.getElementById("sl_7").style.display = "none";
-                    document.getElementById("pg4-1_box").style.display = "none";
-                    document.getElementById("pg5_img").style.display = "block";
-                    document.getElementById("pg4_box").style.display = "flex";
-                    document.getElementById("cl_17").style.display = "inline";
-                    document.getElementById("revealed").style.display = "block";
-                    setTimeout(function(){document.getElementById("revealed").style.display = "none";}, 3000);
-                    document.body.style.backgroundColor = "#e6d8cb";  
-                }
+    var list = document.querySelector(".list");
+    var newList = Sortable.create(list, {
+        animation: 150,
+        disabled: false,
+        onMove: function(evt) {
+            console.log(evt.related);
+        },
+        onEnd: function (evt) {
+            console.log("why");
+            var newList = evt.to;
+            if(newList.children[0].classList[1] == "book_1" && 
+            newList.children[1].classList[1]  == "book_2" && 
+            newList.children[2].classList[1]  == "book_3" && 
+            newList.children[3].classList[1]  == "book_4" && 
+            newList.children[4].classList[1]  == "book_5" && 
+            newList.children[5].classList[1]  == "book_6" && 
+            newList.children[6].classList[1]  == "book_7" && 
+            newList.children[7].classList[1]  == "book_8" && 
+            newList.children[8].classList[1]  == "book_9"){
+                console.log("yay please");
+                this.destroy();
+                document.getElementById("cl_7").style.display = "none";
+                document.getElementById("pic_7").style.display = "none";
+                document.getElementById("sl_7").style.display = "none";
+                document.getElementById("pg4-1_box").style.display = "none";
+                document.getElementById("pg5_img").style.display = "block";
+                document.getElementById("pg4_box").style.display = "flex";
+                document.getElementById("cl_17").style.display = "inline";
+                document.getElementById("revealed").style.display = "block";
+                setTimeout(function(){document.getElementById("revealed").style.display = "none";}, 3000);
+                document.body.style.backgroundColor = "#e6d8cb";  
             }
-        });
+        }
+    });
+    function orderChangeBooks () {
+        newList = Sortable.get(list);
 }
 
 
