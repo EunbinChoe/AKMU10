@@ -350,6 +350,47 @@ picture, .pic {
     clip-path: polygon(66% 32%, 74% 31%, 75% 55%, 67% 49%);
 }
 
+.click__fl1{
+    clip-path: ellipse(10% 6% at 36% 68%);
+}
+
+.click__fl2{
+    clip-path: ellipse(10% 6% at 64% 68%);
+}
+
+.click__fl3{
+    clip-path: ellipse(10% 6% at 36% 56%);
+}
+
+.click__fl4{
+    clip-path: ellipse(10% 6% at 64% 56%);
+}
+
+.click__fl5{
+    clip-path: ellipse(10% 6% at 36% 44%);
+}
+
+.click__fl6{
+    clip-path: ellipse(10% 6% at 64% 44%);
+}
+
+.click__fl7{
+    clip-path: ellipse(10% 6% at 36% 32%);
+}
+
+.click__fl8{
+    clip-path: ellipse(10% 6% at 64% 32%)
+}
+
+.click__fl9{
+    clip-path: ellipse(10% 6% at 36% 19%);
+}
+
+.click__fl10{
+    /* background: var(--color-chan); */
+    clip-path: ellipse(10% 6% at 64% 19%);
+}
+
 .list-container {
     background: #f9e2c3;
     position: relative;
