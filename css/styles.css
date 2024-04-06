@@ -139,12 +139,26 @@ p {
     rotate: 270deg;
 }
 
-.to-right, .to-left, .to-down, .to-up {
+.to-close {
+    top: 80%;
+    left: 45%;
+    rotate: 90deg;
+}
+
+.to-far {
+    top: 42%;
+    left: 42%;
+    rotate: 270deg;
+}
+
+.to-right, .to-left, .to-down, .to-up, .to-close, .to-far {
     transition: transform 0.3s;
     opacity: 0.70;
 }
 
-.to-left:active, .to-right:active {
+.to-left:active, .to-right:active,
+.to-down:active, .to-up:active,
+.to-close:active, .to-far:active {
     transform: scale(1.5);
 }
 
@@ -297,8 +311,43 @@ picture, .pic {
 }
 
 .click__sctdoor{
-    /* background: var(--color-su); */
     clip-path: polygon(0% 23%, 31% 23%, 31% 76%, 0% 76%);
+}
+
+.click__elevator{
+    clip-path: polygon(37% 30%, 62% 30%, 62% 47%, 37% 47%);
+}
+
+.click__1{
+    clip-path: polygon(8% 29%, 23% 31%, 22% 59%, 8% 69%);
+}
+
+.click__2{
+    clip-path: polygon(78% 31%, 94% 28%, 93% 71%, 78% 59%);
+}
+
+.click__3{
+    clip-path: polygon(26% 32%, 34% 33%, 34% 49%, 26% 55%);
+}
+
+.click__4{
+    clip-path: polygon(67% 32%, 76% 31%, 76% 56%, 67% 49%);
+}
+
+.click__5{
+    clip-path: polygon(11% 30%, 24% 31%,23% 57%, 10% 67%);
+}
+
+.click__6{
+    clip-path: polygon(77% 31%, 91% 28%, 91% 68%, 77% 57%);
+}
+
+.click__7{
+    clip-path: polygon(26% 31%, 34% 32%, 34% 50%, 26% 55%);
+}
+
+.click__8{
+    clip-path: polygon(66% 32%, 74% 31%, 75% 55%, 67% 49%);
 }
 
 .list-container {
@@ -367,7 +416,11 @@ picture, .pic {
     transition: transform 0.1s;
 }
 
-.evidence:active {
+.doors {
+    transition: transform 0.1s;
+}
+
+.evidence:active, .doors:active {
     transform: scale(1.05);
 }
 
