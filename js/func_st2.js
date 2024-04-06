@@ -1,3 +1,4 @@
+import Sortable from "sortablejs";
 
 // next page
 document.getElementById("box").addEventListener("click", function () {
@@ -206,93 +207,35 @@ if (!check.forEach((item) => item.classList.contains())) {
     // Books in shelves
     const list = document.querySelector(".list");
     function orderChangeBooks () {
-        
-        let draggedTarget;
-        let helper;
-        document.addEventListener("dragstart", function(e) {
-            draggedTarget = e.target;
-            
-            helper = document.createElement("div");
-            helper.innerText = draggedTarget.querySelector(".list-item-name").innerText;
-            helper.style.position = "absolute";
-            helper.style.top = "-9999px";
-            helper.style.padding = "1rem";
-            helper.style.backgroundColor = "#000";
-            helper.style.color = "#ddd";
-            helper.style.fontSize = "1.5rem";
-            helper.style.fontFamily = "Consolas";
-            document.querySelector(".top").appendChild(helper);
-            
-            e.dataTransfer.setDragImage(helper, 0, -30);
-        });
-        
-        document.addEventListener("dragenter", function(e) {        
-            if (e.target !== draggedTarget && e.target.classList[0] === "list-item") {
-                const ep = e.target.previousElementSibling;
-                const en = e.target.nextElementSibling;
-                const dp = draggedTarget.previousElementSibling;
-                const dn = draggedTarget.nextElementSibling;
-                
-                if (!ep && !dn) {
-                    list.removeChild(draggedTarget);
-                    e.target.insertAdjacentElement("beforebegin", draggedTarget);
-                } else if (!en && !dp) {
-                list.removeChild(draggedTarget);
-                e.target.insertAdjacentElement("afterend", draggedTarget);
-            } else if (ep && ep != draggedTarget) {
-                list.removeChild(e.target);
-                list.removeChild(draggedTarget);
-                ep.insertAdjacentElement("afterend", draggedTarget);
-                draggedTarget.insertAdjacentElement("afterend", e.target);
-            } else if (!ep) {
-                list.removeChild(e.target);
-                list.removeChild(draggedTarget);
-                dn.insertAdjacentElement("beforebegin", e.target);
-                e.target.insertAdjacentElement("beforebegin", draggedTarget);
-            } else if (en && en != draggedTarget) {
-                list.removeChild(e.target);
-                list.removeChild(draggedTarget);
-                en.insertAdjacentElement("beforebegin", draggedTarget);
-                draggedTarget.insertAdjacentElement("beforebegin", e.target);
-            } else if (!en) {
-                list.removeChild(e.target);
-                dp.insertAdjacentElement("afterend", e.target);
+        var newList;
+        new Sortable (list, {
+            animation: 150,
+            onEnd: function (/**Event*/evt) {
+                newList = evt.to;
+                if(newList.children[0].classList[1] == "book_1" && 
+                newList.children[1].classList[1]  == "book_2" && 
+                newList.children[2].classList[1]  == "book_3" && 
+                newList.children[3].classList[1]  == "book_4" && 
+                newList.children[4].classList[1]  == "book_5" && 
+                newList.children[5].classList[1]  == "book_6" && 
+                newList.children[6].classList[1]  == "book_7" && 
+                newList.children[7].classList[1]  == "book_8" && 
+                newList.children[8].classList[1]  == "book_9"){
+                    console.log("yay please");
+                    this.destroy();
+                    document.getElementById("cl_7").style.display = "none";
+                    document.getElementById("pic_7").style.display = "none";
+                    document.getElementById("sl_7").style.display = "none";
+                    document.getElementById("pg4-1_box").style.display = "none";
+                    document.getElementById("pg5_img").style.display = "block";
+                    document.getElementById("pg4_box").style.display = "flex";
+                    document.getElementById("cl_17").style.display = "inline";
+                    document.getElementById("revealed").style.display = "block";
+                    setTimeout(function(){document.getElementById("revealed").style.display = "none";}, 3000);
+                    document.body.style.backgroundColor = "#e6d8cb";  
+                }
             }
-        } 
-    });
-    document.addEventListener("dragover", function(e) {
-        e.preventDefault(); // why necessary ?
-    });
-    
-    document.addEventListener("drop", function(e) {
-        e.preventDefault();
-        helper.parentNode.removeChild(helper);
-        // const firstBook = list.firstElementChild;
-        // console.log(firstBook.classList[1]);
-        if(list.children[0].classList[1] == "book_1" && 
-        list.children[1].classList[1]  == "book_2" && 
-        list.children[2].classList[1]  == "book_3" && 
-        list.children[3].classList[1]  == "book_4" && 
-        list.children[4].classList[1]  == "book_5" && 
-        list.children[5].classList[1]  == "book_6" && 
-        list.children[6].classList[1]  == "book_7" && 
-        list.children[7].classList[1]  == "book_8" && 
-        list.children[8].classList[1]  == "book_9"){
-            // console.log("yay please");
-            document.getElementById("cl_7").style.display = "none";
-            document.getElementById("pic_7").style.display = "none";
-            document.getElementById("pg4-1_box").style.display = "none";
-            document.getElementById("pg5_img").style.display = "block";
-            document.getElementById("pg4_box").style.display = "flex";
-            document.getElementById("cl_17").style.display = "inline";
-            document.getElementById("revealed").style.display = "block";
-            setTimeout(function(){document.getElementById("revealed").style.display = "none";}, 3000);
-            document.body.style.backgroundColor = "#e6d8cb";  
-        }
-    }); 
-
-    // Books in order
-    
+        });
 }
 
 
