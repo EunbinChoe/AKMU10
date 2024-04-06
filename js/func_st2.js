@@ -209,22 +209,19 @@ if (!check.forEach((item) => item.classList.contains())) {
     var newList = Sortable.create(list, {
         animation: 150,
         disabled: false,
-        onMove: function(evt) {
-            console.log(evt.related);
-        },
         onEnd: function (evt) {
-            console.log("why");
+            // console.log("why");
             var newList = evt.to;
-            if(newList.children[0].classList[1] == "book_1" && 
-            newList.children[1].classList[1]  == "book_2" && 
-            newList.children[2].classList[1]  == "book_3" && 
-            newList.children[3].classList[1]  == "book_4" && 
-            newList.children[4].classList[1]  == "book_5" && 
-            newList.children[5].classList[1]  == "book_6" && 
-            newList.children[6].classList[1]  == "book_7" && 
-            newList.children[7].classList[1]  == "book_8" && 
-            newList.children[8].classList[1]  == "book_9"){
-                console.log("yay please");
+            if(newList.children[0].classList[0] == "book_1" && 
+            newList.children[1].classList[0]  == "book_2" && 
+            newList.children[2].classList[0]  == "book_3" && 
+            newList.children[3].classList[0]  == "book_4" && 
+            newList.children[4].classList[0]  == "book_5" && 
+            newList.children[5].classList[0]  == "book_6" && 
+            newList.children[6].classList[0]  == "book_7" && 
+            newList.children[7].classList[0]  == "book_8" && 
+            newList.children[8].classList[0]  == "book_9"){
+                // console.log("yay please");
                 this.destroy();
                 document.getElementById("cl_7").style.display = "none";
                 document.getElementById("pic_7").style.display = "none";
