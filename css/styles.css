@@ -23,6 +23,7 @@ body {
     grid-template-rows: 1fr 25vh;
     word-break: keep-all;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 /* max WIDTH HEIGHT = 100% */
@@ -33,7 +34,7 @@ p,
 }
 
 /* WIDTH HEIGHT = 100% */
-#begin, .box, .bag_container, .text,
+#begin, .box, .bag_container,
 .text, .bag, .item {
     width: 100%;
     height: 100%;
@@ -189,6 +190,11 @@ p {
 .ahmola3 {
     top: 35%;
     left: 10%;
+}
+
+#in3 {
+    position: absolute;
+    top: 195%;
 }
 
 .mg {
@@ -387,8 +393,12 @@ picture, .pic {
 }
 
 .click__fl10{
-    /* background: var(--color-chan); */
     clip-path: ellipse(10% 6% at 64% 19%);
+}
+
+.click__akmoo{
+    /* background: var(--color-chan); */
+    clip-path: ellipse(23% 22% at 60% 58%);
 }
 
 .list-container {
@@ -486,6 +496,12 @@ picture, .pic {
     text-align: center;
     line-height: 1.4;
     width: 100vw;
+}
+
+#answer {
+    position: absolute;
+    width: 100%;
+    top: 80%;
 }
 
 

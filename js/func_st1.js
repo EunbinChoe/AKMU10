@@ -182,6 +182,8 @@ document.getElementById("clue1").addEventListener("click", function() {
     }else if (isNaN(x1)) {
         text = "Input not valid";
     } else {
+        document.getElementById("wrong").style.display = "block";
+        setTimeout(function(){document.getElementById("wrong").style.display = "none";}, 1000);
         text = "wrong";
     }
     // document.getElementById("demo").innerHTML = text;
@@ -192,11 +194,13 @@ document.getElementById("clue1").addEventListener("click", function() {
 document.getElementById("clue2").addEventListener("click", function () {
     let pre_x2 = document.getElementById("txt").value;
     let x2 = pre_x2.replace(/\s/g, "");
-    document.getElementById("in2").classList.add("input--correct");
     let text;
     if (x2 == "악당구무리로47") {
         location.replace("st2_83.html");
+        document.getElementById("in2").classList.add("input--correct");
     } else {
+        document.getElementById("wrong").style.display = "block";
+        setTimeout(function(){document.getElementById("wrong").style.display = "none";}, 1000);
         text = "wrong";
     }
     // document.getElementById("demo").innerHTML = text;

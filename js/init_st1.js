@@ -18,3 +18,4 @@ document.getElementById("pic_2").style.display = "none";
 document.getElementById("pic_3").style.display = "none";
 const bag_items = document.querySelectorAll(".bag__item");
 bag_items.forEach((item) => item.style.display = "none");
+document.getElementById("wrong").style.display = "none";
