@@ -172,10 +172,10 @@ document.getElementById("clue3").addEventListener("click", function() {
             document.getElementById("note").style.display = "none";
             document.getElementById("stickynote").style.display = "block";
             document.getElementById("sl_4").classList.remove("selected__clue");
+            document.body.style.backgroundColor = "#e6d8cb";
         } else {
             document.getElementById("secretdoor").style.display = "block";
             setTimeout(function(){document.getElementById("secretdoor").style.display = "none";}, 2000);
-            document.body.style.backgroundColor = "#e6d8cb";
         }
     }else if (isNaN(x1)) {
         console.log("Input not valid");
