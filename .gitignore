@@ -2,3 +2,6 @@ node_modules/
 dist/
 .parcel-cache/
 .cache/
+components/
+teaser/
+탐정 악카데미.txt
