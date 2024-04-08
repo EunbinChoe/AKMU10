@@ -17,11 +17,121 @@
       content="악뮤 데뷔 10주년 기념 방탈출 게임 (Made By: 악카데미)"
     />
     <title>탐정 악카데미</title>
-    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/basic.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/intro.css" />
   </head>
   <body>
-    <div id="begin"><a href="st1_19.html">click</a></div>
+    <div class="intro" id="front">
+      <div class="top"></div>
+      <div class="blurred_da"></div>
+      <div class="bottom"></div>
+      <p class="blinkclick">화면 어디든 눌러주세요!</p>
+    </div>
+    <div class="container" id="howto">
+      <h1>게임 조작 방법</h1>
+      <ul class="howto_list">
+        <div class="how">
+          <li class="rule">
+            <picture class="ex_img menu">
+              <!-- <source type="image/webp" srcset="images/menu.webp" /> -->
+              <source type="image/png" srcset="images/menu.png" />
+              <img src="images/menu.png" alt="" />
+            </picture>
+            <div class="ex_txt ba">
+              <p class="exp">
+                &hearts; 왼쪽 상단 메뉴로 게임 상황을 초기화할 수 있어요!
+              </p>
+            </div>
+          </li>
+        </div>
+        <div class="how">
+          <h2>화면 아래 창의 용도는 두가지!</h2>
+          <li class="rule">
+            <div class="ex_txt">
+              <h3 class="exp">1. 글이 있는 경우</h3>
+              <ul class="exps">
+                <li class="exp">&hearts; 상황 설명 or 대화창</li>
+                <li class="exp">
+                  &hearts; 다음 화면으로 넘어가려면 박스 터치!<br />
+                  &lpar;넘어가지 않는다면, 글을 터치해주세요!&rpar;
+                </li>
+                <li class="exp">
+                  &hearts; 넘어간 지문은 다시 읽을 수 없으니 주의
+                </li>
+              </ul>
+            </div>
+            <picture class="ex_img box"
+              ><!-- <source type="image/webp" srcset="images/txtbox.webp" /> -->
+              <source type="image/png" srcset="images/txtbox.png" />
+              <img src="images/txtbox.png" alt="" />
+            </picture>
+          </li>
+          <li class="rule">
+            <picture class="ex_img box">
+              <!-- <source type="image/webp" srcset="images/bagbox.webp" /> -->
+              <source type="image/png" srcset="images/bagbox.png" />
+              <img src="images/bagbox.png" alt="" />
+            </picture>
+            <div class="ex_txt">
+              <h3 class="exp">2. 여러칸이 있는 경우</h3>
+              <ul class="exps">
+                <li class="exp">&hearts; 획득한 단서를 넣어두는 가방</li>
+                <li class="exp">
+                  &hearts; 자세히 보거나, 단서를 사용하려면 해당 단서의 칸을
+                  터치!
+                </li>
+                <li class="exp">
+                  &hearts; 단서의 다른 면이 존재한다면, 자세히 본 상태에서
+                  단서를 누르기
+                </li>
+                <li class="exp">
+                  &hearts; 단서 사용 - 해당 단서 칸을 터치한 후 사용할 곳을
+                  터치!<br />아이템끼리도 사용 가능 &check;
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
+        <div class="how">
+          <li class="rule">
+            <picture class="ex_img move">
+              <!-- <source type="image/webp" srcset="images/move.webp" /> -->
+              <source type="image/png" srcset="images/move.png" />
+              <img src="images/move.png" alt="" />
+            </picture>
+            <div class="ex_txt ba">
+              <p class="exp">
+                &hearts; 화살표를 누르면 해당 장소의<br />
+                다른 곳을 볼 수 있어요!<br />
+                자유롭게 왔다갔다 가능 &check;
+              </p>
+            </div>
+          </li>
+        </div>
+        <div class="how">
+          <li class="rule">
+            <picture class="ex_img mg">
+              <!-- <source type="image/webp" srcset="images/mg.webp" /> -->
+              <source type="image/png" srcset="images/mg.png" />
+              <img src="images/mg.png" alt="" />
+            </picture>
+            <div class="ex_txt ba">
+              <p class="exp">
+                &hearts; 터치하면 정보입력창 등장!<br />
+                정답을 창에 입력해주세요
+              </p>
+            </div>
+          </li>
+        </div>
+        <div class="how">
+          <h2>그 외 화면 곳곳 숨겨진 단서는 눌러서 확인해주세요!</h2>
+        </div>
+      </ul>
+      <button class="btn" type="button" id="btn">
+        탐정 악카데미 지금 바로 시작!
+      </button>
+    </div>
+    <script type="module" src="js/intro.js"></script>
   </body>
 </html>
