@@ -13,7 +13,7 @@ body {
     grid-template-rows: 1fr 25vh;
     word-break: keep-all;
     font-size: 2rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* max WIDTH HEIGHT = 100% */
