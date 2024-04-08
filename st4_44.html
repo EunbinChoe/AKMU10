@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <title>탐정 악카데미</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/init_st4.js"></script>
+  </head>
+  <body style="background: #fff5d0">
+    <div class="top">
+      <nav class="menu collapsible">
+        <svg class="icon menu__icon">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="menu__list collapsible__content">
+          <li class="menu__item"><a href="index.html">처음으로</a></li>
+        </ul>
+      </nav>
+      <picture id="pg7_img">
+        <!-- <source type="image/webp" srcset="images/akmuEG8-1.webp" /> -->
+        <source type="image/png" srcset="images/akmuEG8-1.png" />
+        <img class="full_pic" src="images/akmuEG8-1.png" alt="" />
+      </picture>
+      <div class="pic" id="pg8_img1">
+        <div class="move">
+          <svg class="icon to-right">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="move">
+          <svg class="icon to-left">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" srcset="images/akmuEG8-1.webp" /> -->
+          <source type="image/png" srcset="images/akmuEG8-1.png" />
+          <img class="full_pic" src="images/akmuEG8-1.png" alt="" />
+        </picture>
+        <!-- <picture class="click click__door" id="cl_4">
+          <source type="image/webp" srcset="images/akmuEG4-1door.webp" />
+          <source type="image/png" srcset="images/akmuEG4-1door.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG4-1door.png"
+            alt=""
+          />
+        </picture> -->
+      </div>
+      <!-- <div class="pic clicked__clue" id="pic_4">
+        <div class="ahmola ahmola3">
+          <svg class="icon mg">
+            <use xlink:href="images/sprite.svg#magnifying-glass"></use>
+          </svg>
+          <div class="input" id="in3">
+            <input
+              class="clue"
+              id="numb"
+              type="number"
+              placeholder="----"
+              autocomplete="off"
+            />
+            <button class="btn" type="button" id="clue3">Open</button>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="images/doorlock.webp" />
+            <source type="image/png" srcset="images/doorlock.png" />
+            <img class="full_pic" src="images/doorlock.png" alt="" />
+          </picture>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/akmuEG4-1door_.webp" />
+          <source type="image/png" srcset="images/akmuEG4-1door_.png" />
+          <img class="full_pic" src="images/akmuEG4-1door_.png" alt="" />
+        </picture>
+      </div> -->
+      <div class="pic" id="pg8_img2">
+        <div class="move">
+          <svg class="icon to-right">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="move">
+          <svg class="icon to-left">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" srcset="images/akmuEG8-2.webp" /> -->
+          <source type="image/png" srcset="images/akmuEG8-2.png" />
+          <img class="full_pic" src="images/akmuEG8-2.png" alt="" />
+        </picture>
+        <!-- <picture class="click click__photo1" id="cl_5">
+          <source type="image/webp" srcset="images/akmuEG4-2photo.webp" />
+          <source type="image/png" srcset="images/akmuEG4-2photo.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG4-2photo.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__note" id="cl_6">
+          <source type="image/webp" srcset="images/akmuEG4-2note.webp" />
+          <source type="image/png" srcset="images/akmuEG4-2note.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG4-2note.png"
+            alt=""
+          />
+        </picture> -->
+      </div>
+      <div class="pic" id="pg8_img3">
+        <div class="move">
+          <svg class="icon to-right">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <div class="move">
+          <svg class="icon to-left">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <picture>
+          <!-- <source type="image/webp" srcset="images/akmuEG8-3.webp" /> -->
+          <source type="image/png" srcset="images/akmuEG8-3.png" />
+          <img class="full_pic" src="images/akmuEG8-3.png" alt="" />
+        </picture>
+        <!-- <picture class="click click__book1" id="cl_7">
+          <source type="image/webp" srcset="images/shelves.webp" />
+          <source type="image/png" srcset="images/shelves.png" />
+          <img class="full_pic evidence" src="images/shelves.png" alt="" />
+        </picture>
+        <picture class="click click__book2" id="cl_8">
+          <source type="image/webp" srcset="images/fishinthewater.webp" />
+          <source type="image/png" srcset="images/fishinthewater.png" />
+          <img
+            class="full_pic evidence"
+            src="images/fishinthewater.png"
+            alt=""
+          />
+        </picture> -->
+        <!-- <picture class="click click__sctdoor" id="cl_17">
+          <source type="image/webp" srcset="images/secretdoor.webp" />
+          <source type="image/png" srcset="images/secretdoor.png" />
+          <img class="full_pic evidence" src="images/secretdoor.png" alt="" />
+        </picture> -->
+      </div>
+      <!-- <div class="pic clicked__clue" id="pic_8">
+        <picture>
+          <source type="image/webp" srcset="images/lyrics.webp" />
+          <source type="image/png" srcset="images/book.png" />
+          <img class="" src="images/book.png" alt="" />
+        </picture>
+      </div> -->
+      <!-- <div class="item_desc" id="revealed">
+        헉 책장 뒤에 숨겨져 있던 통로가 있네?!
+      </div> -->
+      <!-- <div class="pic" id="pg5_img2">
+        <div class="move">
+          <svg class="icon to-left">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/akmuEG5-2.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2.png" />
+          <img class="full_pic" src="images/akmuEG5-2.png" alt="" />
+        </picture>
+        <picture class="click click__board" id="cl_9">
+          <source type="image/webp" srcset="images/akmuEG5-2board.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2board.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2board.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__cab1" id="cl_10">
+          <source type="image/webp" srcset="images/akmuEG5-2cabinet1.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2cabinet1.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2cabinet1.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__cab2" id="cl_11">
+          <source type="image/webp" srcset="images/akmuEG5-2cabinet2.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2cabinet2.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2cabinet2.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__cab3" id="cl_12">
+          <source type="image/webp" srcset="images/akmuEG5-2cabinet3.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2cabinet3.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2cabinet3.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__cab4" id="cl_13">
+          <source type="image/webp" srcset="images/akmuEG5-2cabinet4.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2cabinet4.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2cabinet4.png"
+            alt=""
+          />
+        </picture>
+        <picture class="click click__cab5" id="cl_14">
+          <source type="image/webp" srcset="images/akmuEG5-2cabinet5.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2cabinet5.png" />
+          <img
+            class="full_pic evidence"
+            src="images/akmuEG5-2cabinet5.png"
+            alt=""
+          />
+        </picture>
+      </div> -->
+      <!-- <div class="pic clicked__clue" id="pic_9">
+        <div class="move">
+          <svg class="icon to-down">
+            <use xlink:href="images/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/akmuEG5-2board_.webp" />
+          <source type="image/png" srcset="images/akmuEG5-2board_.png" />
+          <img class="full_pic" src="images/akmuEG5-2board_.png" alt="" />
+        </picture>
+        <picture class="click click__stickynote" id="cl_15">
+          <source type="image/webp" srcset="images/stickynote_.webp" />
+          <source type="image/png" srcset="images/stickynote_.png" />
+          <img class="full_pic evidence" src="images/stickynote_.png" alt="" />
+        </picture>
+        <picture class="click click__lyrics" id="cl_16">
+          <source type="image/webp" srcset="images/lyrics_.webp" />
+          <source type="image/png" srcset="images/lyrics_.png" />
+          <img class="full_pic evidence" src="images/lyrics_.png" alt="" />
+        </picture>
+      </div> -->
+      <!-- <div class="pic clicked__clue" id="pic_10">
+        <picture>
+          <source type="image/webp" srcset="images/lyrics.webp" />
+          <source type="image/png" srcset="images/lyrics.png" />
+          <img class="full_pic" src="images/lyrics.png" alt="" />
+        </picture>
+      </div>
+      <div class="item_desc" id="locked">잠겨있다.</div>
+      <div class="bag__item" id="bi_1">
+        <picture>
+          <source type="image/webp" srcset="images/polaroid1.webp" />
+          <source type="image/png" srcset="images/polaroid1.png" />
+          <img class="full_pic" src="images/polaroid1.png" alt="" />
+        </picture>
+      </div> -->
+      <!-- <div class="bag__item" id="bi_3">
+        <picture>
+          <source type="image/webp" srcset="images/interview_cover.webp" />
+          <source type="image/png" srcset="images/interview_cover.png" />
+          <img class="full_pic" src="images/interview_cover.png" alt="" />
+        </picture>
+      </div>
+      <div class="bag__item" id="bi_4">
+        <picture>
+          <source type="image/webp" srcset="images/polaroid2.webp" />
+          <source type="image/png" srcset="images/polaroid2.png" />
+          <img class="full_pic" src="images/polaroid2.png" alt="" />
+        </picture>
+      </div>
+      <div class="bag__item item_desc" id="bi_5">
+        작은 열쇠다.<br />
+        0407라고 적혀있다.
+      </div>
+      <div class="bag__item" id="bi_6">
+        <picture>
+          <source type="image/webp" srcset="images/cardkey.webp" />
+          <source type="image/png" srcset="images/cardkey.png" />
+          <img class="full_pic" src="images/cardkey.png" alt="" />
+        </picture>
+      </div>
+      <div class="item_desc" id="secretdoor">뭐 놓친 단서는 없나...?</div>
+      <div class="item_desc" id="wrong">비밀번호가 틀렸다.</div> -->
+    </div>
+
+    <div class="bottom">
+      <svg class="icon frog">
+        <use xlink:href="images/sprite.svg#CHANfrog1"></use>
+      </svg>
+      <svg class="icon bunny">
+        <use xlink:href="images/sprite.svg#SUbunny1"></use>
+      </svg>
+      <div class="box" id="box">
+        <div class="text" id="pg7_box">
+          <p>
+            이 방 어딘가에 숨겨져 있는게 분명해!<br />
+            여기저기 둘러봐야겠다. <br />
+            익숙해 보이는 것들이 많군...
+          </p>
+        </div>
+        <div id="pg8_box" class="bag_container">
+          <ul class="bag bag2">
+            <li class="item" id="item_1">
+              <picture class="collected__item" id="mggl_1">
+                <source type="image/webp" srcset="images/polaroid1.webp" />
+                <source type="image/png" srcset="images/polaroid1.png" />
+                <img src="images/polaroid1.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_2">
+              <picture class="collected__item" id="mggl_2">
+                <source type="image/webp" srcset="images/note.webp" />
+                <source type="image/png" srcset="images/note.png" />
+                <img src="images/note.png" alt="" />
+              </picture>
+              <picture class="collected__item" id="mggl_3">
+                <source type="image/webp" srcset="images/stickynote.webp" />
+                <source type="image/png" srcset="images/stickynote.png" />
+                <img src="images/stickynote.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_3">
+              <picture class="collected__item" id="mggl_4">
+                <source
+                  type="image/webp"
+                  srcset="images/interview_cover.webp"
+                />
+                <source type="image/png" srcset="images/interview_cover.png" />
+                <img src="images/interview_cover.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_4">
+              <picture class="collected__item" id="mggl_5">
+                <source type="image/webp" srcset="images/polaroid2.webp" />
+                <source type="image/png" srcset="images/polaroid2.png" />
+                <img src="images/polaroid2.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_5">
+              <picture class="collected__item" id="mggl_6">
+                <!-- <source type="image/webp" srcset="images/lockerkey.webp" /> -->
+                <source type="image/png" srcset="images/lockerkey.png" />
+                <img src="images/lockerkey.png" alt="" />
+              </picture>
+            </li>
+            <li class="item" id="item_6">
+              <picture class="collected__item" id="mggl_7">
+                <source type="image/webp" srcset="images/cardkey.webp" />
+                <source type="image/png" srcset="images/cardkey.png" />
+                <img src="images/cardkey.png" alt="" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div id="pg8-1_box" class="text clue__text">
+          <p id="sl_4" class="conversation">
+            현관이 잠겨있군...<br />
+            비밀번호가 뭘까?<br />
+          </p>
+          <p id="sl_7">
+            흠 책들이군...<br />
+            순서를 바꿀 수 있군
+          </p>
+          <p id="sl_8">
+            물 만난 물고기? <br />
+            책 사이에 뭐가 끼워져있다.<br />
+            다시 방으로 돌아가서 확인해봐야겠다.
+          </p>
+          <p id="sl_9">
+            오늘을 위해 고이 모셔둔 내 탐정 도구가 들어있는 보물상자다.<br />
+            6자리 숫자의 비밀번호라...<br />
+          </p>
+          <p id="sl_5">
+            지도...?<br />
+            어디로 가야하지?<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/func_st4.js"></script>
+    <script type="module" src="js/general.js"></script>
+  </body>
+</html>

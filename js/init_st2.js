@@ -21,8 +21,7 @@ document.getElementById("locked").style.display = "none";
 document.getElementById("secretdoor").style.display = "none";
 document.getElementById("revealed").style.display = "none";
 document.getElementById("wrong").style.display = "none";
-let it = "";
 for (let i = 1; i <= 7; i++) {
-    it = "mggl_" + i;
+    let it = "mggl_" + i;
     document.getElementById(it).style.display = "none";
 }
