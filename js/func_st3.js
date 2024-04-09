@@ -136,6 +136,7 @@ document.getElementById("ans_button").addEventListener("click", function(){
         document.getElementById("answer").style.display = "none";
         document.getElementById("akmoo").style.display = "none";
         document.getElementById("mggl_2").style.display = "none";
+        document.getElementById("bi_2").style.display = "none";
         document.getElementById("after__akmoo").style.display = "block";
         document.getElementById("after__akmoo2").style.display = "block";
     } else {
