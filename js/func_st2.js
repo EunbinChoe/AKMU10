@@ -173,6 +173,7 @@ document.getElementById("clue3").addEventListener("click", function() {
             document.getElementById("pg4_box").style.display = "flex";
             document.getElementById("pg4-1_box").style.display = "none";
             document.getElementById("mggl_2").style.display = "none";
+            document.getElementById("bi_2").style.display = "none";
             document.getElementById("note").style.display = "none";
             document.getElementById("stickynote").style.display = "block";
             document.getElementById("sl_4").classList.remove("selected__clue");

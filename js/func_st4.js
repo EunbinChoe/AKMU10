@@ -152,6 +152,8 @@ item.addEventListener("click", function () {
         document.getElementById("mggl_12").style.display = "block";
         document.getElementById("mggl_2").style.display = "none";
         document.getElementById("mggl_11").style.display = "none";
+        document.getElementById("bi_2").style.display = "none";
+        document.getElementById("bi_11").style.display = "none";
         document.getElementById("obtaineditem").style.display = "block";
         setTimeout(function(){document.getElementById("obtaineditem").style.display = "none";}, 2000);    
     } else if (selected_num == 10 && !wordsfound) {
@@ -178,6 +180,11 @@ document.getElementById("clue4").addEventListener("click", function () {
         document.getElementById("mggl_8").style.display = "none";
         document.getElementById("mggl_9").style.display = "none";
         document.getElementById("mggl_10").style.display = "none";
+        document.getElementById("bi_6").style.display = "none";
+        document.getElementById("bi_7").style.display = "none";
+        document.getElementById("bi_8").style.display = "none";
+        document.getElementById("bi_9").style.display = "none";
+        document.getElementById("bi_10").style.display = "none";
         document.getElementById("draweropen").style.display = "none";
         document.getElementById("open").style.display = "block";
         setTimeout(function(){document.getElementById("open").style.display = "none";}, 1000);
@@ -244,9 +251,7 @@ const openItem = document.querySelectorAll(".item");
 openItem.forEach((item) =>
   item.addEventListener("click", function () {
     let i = this.id.split("_").pop();
-    console.log(i);
     if (i == 1 && document.getElementById("mggl_1").style.display == "block") {
-        console.log("1 works");
         if (document.getElementById("bi_1").style.display == "block"){
             document.getElementById("bi_1").style.display = "none";
         }else {
