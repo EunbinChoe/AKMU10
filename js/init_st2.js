@@ -31,6 +31,7 @@ document.getElementById("cl_17").style.display = "none";
 document.getElementById("stickynote").style.display = "none";
 
 // explanations
+document.getElementById("obtaineditem").style.display = "none";
 document.getElementById("locked").style.display = "none";
 document.getElementById("secretdoor").style.display = "none";
 document.getElementById("revealed").style.display = "none";

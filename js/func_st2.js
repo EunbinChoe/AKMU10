@@ -24,6 +24,10 @@ document.getElementById("box").addEventListener("click", function () {
         clicks.forEach((item) => item.classList.remove("clicked"));
         const select = document.querySelectorAll(".selected__clue");
         select.forEach((item) => item.classList.remove("selected__clue"));
+        if (document.getElementById('pic_8').style.display == "block") {
+            document.getElementById("obtaineditem").style.display = "block";
+            setTimeout(function(){document.getElementById("obtaineditem").style.display = "none";}, 3000);    
+        }
         document.getElementById("pic_7").style.display = "none";
         document.getElementById("pic_8").style.display = "none";
         document.getElementById("pg4-1_box").style.display = "none";
