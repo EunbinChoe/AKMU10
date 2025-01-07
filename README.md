@@ -14,7 +14,7 @@ Created with html, css and simple javascript.
 
 Unfortunately, it is fully in Korean. (Sorry English speakers)
 
-For those who does speak Korean but do not know AKMU well, here is a [hint](http://detective-akkademy.notion.site/).
+For those who does speak Korean but do not know AKMU well, here is a [hint](https://detective-akkademy.notion.site/7be79442d130459b8c055b26b00357be).
 
 ## Reference
 
