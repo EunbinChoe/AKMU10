@@ -16,6 +16,8 @@ Unfortunately, it is fully in Korean. (Sorry English speakers)
 
 For those who does speak Korean but do not know AKMU well, here is a [hint](https://detective-akkademy.notion.site/7be79442d130459b8c055b26b00357be).
 
+First, go on the website on mobile (on portrait, not landscape). Follow the instruction on the screen, then play!
+
 ## Reference
 
 with the help from the online course "The Ultimate HTML5 & CSS3 Series" from [Code with Mosh](https://codewithmosh.com/).
